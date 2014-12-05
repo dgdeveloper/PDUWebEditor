@@ -1,0 +1,47 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[tbl_Assets]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The table [dbo].[tbl_PDURecords] is being dropped and re-created since all non-computed columns within the table have
+         been redefined.
+       The column [dbo].[tbl_PDUs].[Pdu_PDURecordId] is being dropped, data loss could occur.
+
+** User actions
+     Rename
+       [dbo].[tbl_PDURecords].[Rec_PDURecordId] (Column)
+       [dbo].[tbl_PDURecords].[Rec_PDURecordName] (Column)
+       [dbo].[tbl_PDURecords].[Rec_PDURecordStartDate] (Column)
+       [dbo].[tbl_PDURecords].[Rec_RecordEndDate] (Column)
+       [dbo].[tbl_PDURecords].[Rec_PDURecordWeight] (Column)
+       [dbo].[tbl_PDURecords].[Rec_AssetUniqueId] (Column)
+       [dbo].[tbl_Assets].[Ast_FileName] (Column)
+       [dbo].[tbl_PDUs].[Pdu_FileName] (Column)
+       [dbo].[tbl_PDUs].[Pdu_UpdateByWho] (Column)
+       [dbo].[tbl_PDUs].[Pdu_UpdateOnDate] (Column)
+       [dbo].[tbl_PDUs].[Pdu_Type] (Column)
+     Drop
+       [dbo].[ck_PDURecordWeight] (Check Constraint)
+       [dbo].[fk_AssetUinqueId] (Foreign Key)
+       [dbo].[fk_Pdu_PDURecordId] (Foreign Key)
+       [dbo].[tbl_PduRecords] (Table)
+     Create
+       [dbo].[tbl_PduRecords] (Table)
+       [dbo].[tbl_Records] (Table)
+       [dbo].[fk_Pdr_PDUUniqueId] (Foreign Key)
+       [dbo].[fk_Pdr_RecordId] (Foreign Key)
+       [dbo].[fk_Rec_AssetUniqueId] (Foreign Key)
+       [dbo].[ck_Rec_PDURecordWeight] (Check Constraint)
+     Alter
+       [dbo].[tbl_PDUs] (Table)
+     Table rebuild
+       [dbo].[tbl_Assets] (Table)
+
+** Supporting actions
+
+The table [dbo].[tbl_PDURecords] is being dropped and re-created since all non-computed columns within the table have been redefined.
+The column [dbo].[tbl_PDUs].[Pdu_PDURecordId] is being dropped, data loss could occur.
+

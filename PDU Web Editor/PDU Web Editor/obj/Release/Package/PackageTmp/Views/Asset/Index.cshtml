@@ -1,0 +1,155 @@
+﻿@{
+    ViewBag.Title = "Assets List";
+}
+
+@using PDU_Web_Editor.Models;
+
+@section scripts
+{
+    <script type="text/javascript">
+        function onUploadSuccess() {
+            //refresh the grid after the file is upload successfully
+            var grid = $("#grid").data("kendoGrid");
+            grid.dataSource.read();;
+        }
+
+        function onUploadError(e) {
+            // Array with information about the uploaded files
+            var files = e.files;
+
+            if (e.operation == "upload") {
+                alert("A file with the same name exists already");
+                // alert("Status: " + e.response.status);
+            }
+        }
+
+        function onUploadSelect(e) {//alert if not swf file select
+            // Array with information about the uploaded files
+            var files = e.files;
+            var ok = files[0].extension == ".swf" || files[0].extension == ".SWF";
+            if ( !ok){
+                e.preventDefault();
+                alert("Please select a swf file");
+            }
+        }
+        function onDatasourceError(e) {//alert if the file has removed already
+            if (e.errors == "the asset file has been removed already") {
+                var grid = $("#grid").data("kendoGrid");
+                grid.dataSource.read();;
+                alert("the asset file has been removed already");
+            }
+        }
+        function onUpload(e) {//save screen size dropdown value
+            e.data = {
+                screenSize: $("#AssetScreenSizeList").data("kendoDropDownList").text()
+            };
+        }
+        function ontheErrorCes(e) {
+            var aa = e;
+            alert("error");
+        }
+    </script>
+}
+
+
+
+
+<div class="content-wrapper">
+    <div class="k-block">
+        <div class="k-header k-info-colored">
+            <span class="setting-title">Assets List</span>
+            <img class="setting-icon" src="@Url.Content("~/Images/settings-3.png")" alt="setting icon" />
+        </div>
+        <div class="k-block">
+            Screen Size
+                @(Html.Kendo().DropDownList().Name("AssetScreenSizeList")
+                                             .DataTextField("Text")
+                                             .DataValueField("Value")
+                                             .BindTo(ViewBag.screenSizes)
+                                             .HtmlAttributes(new { style="width:auto" })
+                  )
+        </div>
+        <div class="k-widget">
+
+            @(Html.Kendo().Upload()
+            .Name("assetFile")
+            .Messages(m => m.Select("Upload an asset file"))
+            .Async(async => async
+                                .Save("SaveUploadFile", "Asset")
+                  )
+            .Events(s => s.Success("onUploadSuccess")) //refresh grid onSuccess event     
+            .Events(e => e.Error("onUploadError"))  //error out if upload fails
+            .Events(se => se.Select("onUploadSelect")) 
+            .Events(u => u.Upload("onUpload")) 
+            .Multiple(false)
+            .HtmlAttributes(new { accept = ".swf" })//show .swf file only
+            )
+        </div>
+        <div class="k-widget">
+            @(Html.Kendo().Grid<Asset>() //Bind the grid to 
+                          .Name("grid")
+                          .Columns(columns =>
+                          {
+                              // Create a column bound to the Asset FileName property
+                              columns.Bound(asset => asset.Ast_FileName).Title("Name");
+                              // Create a column bound to the Asset UpdatedByWho property
+                              columns.Bound(asset => asset.Ast_UpdatedByWho).Title("Updated By");
+                              // Create a column bound to the Asset UpdatedOnDate property
+                              columns.Bound(asset => asset.Ast_UpdatedOnDate).Format("{0:M/d/yyyy HH:mm:ss}").Title("Updated On");
+                             // Create a column bound to the Asset Screen size property
+                              columns.Bound(asset => asset.Ast_ScreenSize).Title("Screen Size");
+                              columns.Command(commands =>
+                              {
+                                  commands.Destroy(); // The "destroy" command removes data items
+                              }).Title("Action").Width(200);
+                          })
+                          .Pageable() // Enable paging
+                          .Sortable() // Enable sorting
+                          //.ClientDetailTemplateId("template")
+                          .DataSource(dataSource => dataSource
+                                       .Ajax()
+                                       .Model(model =>
+                                       {
+                                           model.Id(asset => asset.Ast_FileName); // Specify the property which is the unique identifier of the model
+                                       })
+                                       .Read(read => read.Action("Assets_Read", "Asset"))  // Action invoked when the grid needs data
+                                       .Destroy(destroy => destroy.Action("Assets_Delete", "Asset")) // Action invoked when the user removes a data item
+                                       .Events(events => events.Error("onDatasourceError")) //error out if datasource sync failed
+                                       )     
+                       //    .Events(events => events.DataBound("dataBound"))
+                          
+              )
+
+          
+
+        </div>
+    </div>
+</div>
+  @*Client Detail Template to show PDU assoicated to a asset*@
+@*<script id="template" type="text/kendo-tmpl">
+@(Html.Kendo().Grid<PDU>()
+        .Name("grid_#=Pdu_PDUUniqueId#")
+        .Columns(columns =>
+        {
+            columns.Bound(p => p.Pdu_FileName).Width(70);
+            columns.Bound(p => p.Pdu_ScreenSize).Width(110);
+            columns.Bound(p => p.Pdu_PDUUniqueId);
+        })
+        .DataSource(dataSource => dataSource
+            .Ajax()
+            .PageSize(5)
+            .Read(read => read.Action("PDUs_Read", "Asset", new { pdu = "#=Pdu_PDUUniqueId#"}))
+            .Events(e => e.Error("ontheErrorCes"))
+        )
+        .Pageable()
+        .Sortable()
+        .ToClientTemplate()
+
+)
+</script>
+
+<script>
+    function dataBound() {
+        this.expandRow(this.tbody.find("tr.k-master-row").first());
+    }
+</script>*@

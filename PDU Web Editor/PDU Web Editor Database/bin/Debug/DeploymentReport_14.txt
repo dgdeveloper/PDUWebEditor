@@ -1,0 +1,32 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[tbl_Assets]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[tbl_Assets].[Ast_AssetUniqueId] is being dropped, data loss could occur.
+
+** User actions
+     Rename
+       [dbo].[tbl_Records].[Rec_AssetFileName] (Column)
+     Drop
+       [dbo].[fk_Rec_AssetUniqueId] (Foreign Key)
+       [dbo].[fk_Pdr_PDUUniqueId] (Foreign Key)
+       [dbo].[fk_Pdr_RecordId] (Foreign Key)
+       [dbo].[ck_Rec_PDURecordWeight] (Check Constraint)
+     Table rebuild
+       [dbo].[tbl_Assets] (Table)
+     Alter
+       [dbo].[tbl_Records] (Table)
+     Create
+       [dbo].[fk_Rec_AssetUniqueId] (Foreign Key)
+       [dbo].[fk_Pdr_PDUUniqueId] (Foreign Key)
+       [dbo].[fk_Pdr_RecordId] (Foreign Key)
+       [dbo].[ck_Rec_PDURecordWeight] (Check Constraint)
+
+** Supporting actions
+
+The column [dbo].[tbl_Assets].[Ast_AssetUniqueId] is being dropped, data loss could occur.
+

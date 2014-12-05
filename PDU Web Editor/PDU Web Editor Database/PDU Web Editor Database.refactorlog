@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="92f4f2a5-a197-487e-a302-70a076bf9431" ChangeDateTime="06/05/2014 18:02:28">
+    <Property Name="ElementName" Value="[dbo].[Table1].[Ast_AssetUniqu]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Table1]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Ast_AssetUniqueId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f001a014-be79-4bbf-91c3-4feeb1120fc6" ChangeDateTime="06/06/2014 18:39:30">
+    <Property Name="ElementName" Value="[dbo].[PK_AssetId]" />
+    <Property Name="ElementType" Value="SqlPrimaryKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Assets]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[pk_AssetId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9d6eba22-f10e-4b5b-8859-88e1adec6024" ChangeDateTime="06/06/2014 20:23:18">
+    <Property Name="ElementName" Value="[dbo].[tbl_PDURecords].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDURecords]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pdr_PDURecordId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="99f98ee4-e729-43ca-be11-3ebf64b75640" ChangeDateTime="06/06/2014 20:25:29">
+    <Property Name="ElementName" Value="[dbo].[pk_tbl_PDURecords]" />
+    <Property Name="ElementType" Value="SqlPrimaryKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDURecords]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[pk_PDURecordId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c859ef6e-2c24-4502-a60f-f8bf10f90a13" ChangeDateTime="06/06/2014 20:38:03">
+    <Property Name="ElementName" Value="[dbo].[tbl_PDURecords].[Pdt_AssetUniqueId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDURecords]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pdr_AssetUniqueId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b16dcd0b-28d7-4dd6-ba4d-d0f6fba84aa7" ChangeDateTime="06/09/2014 17:50:16">
+    <Property Name="ElementName" Value="[dbo].[tbl_PDUs].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDUs]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pdu_PDUUniqueId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="abf76b01-c8e8-4514-b504-582172b4f2a8" ChangeDateTime="06/09/2014 17:51:41">
+    <Property Name="ElementName" Value="[dbo].[pk_]" />
+    <Property Name="ElementType" Value="SqlPrimaryKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDUs]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[pk_Pdu_PDUUniqueId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="70687978-872c-4c7b-b526-e3db8b2d9783" ChangeDateTime="06/09/2014 17:52:50">
+    <Property Name="ElementName" Value="[dbo].[fk_]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDUs]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[fk_Pdr_PDURecordId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="51f6a990-d84d-435a-98b5-d9a4d2bb21fe" ChangeDateTime="06/09/2014 20:51:24">
+    <Property Name="ElementName" Value="[dbo].[tbl_Assets].[Ast_UpdateByWho]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Assets]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Ast_UpdatedByWho" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c32cf349-a116-42e9-bec3-2c2e39dcf6be" ChangeDateTime="06/09/2014 20:51:27">
+    <Property Name="ElementName" Value="[dbo].[tbl_Assets].[Ast_UpdateOnDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Assets]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Ast_UpdatedOnDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="527152cb-7341-40ab-b217-3a558480b732" ChangeDateTime="07/15/2014 18:22:48">
+    <Property Name="ElementName" Value="[dbo].[tbl_PDUs].[Pdr_PDURecordId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDUs]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pdu_PDURecordId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fd03957c-3bb1-47e3-8174-8e7ba81b35c7" ChangeDateTime="07/15/2014 22:49:54">
+    <Property Name="ElementName" Value="[dbo].[tbl_PDURecords].[Pdr_PDURecordId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDURecords]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Rec_PDURecordId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4e683407-405b-4ef0-9121-a682f7f1ac16" ChangeDateTime="07/15/2014 22:49:59">
+    <Property Name="ElementName" Value="[dbo].[tbl_PDURecords].[Pdr_PDURecordName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDURecords]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Rec_PDURecordName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2c72fd85-fc06-4dbe-9f3c-0c4b0f267bfa" ChangeDateTime="07/15/2014 22:50:00">
+    <Property Name="ElementName" Value="[dbo].[tbl_PDURecords].[Pdr_PDURecordStartDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDURecords]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Rec_PDURecordStartDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="dfd64c44-0a74-4ed6-8d86-233e2c58835f" ChangeDateTime="07/15/2014 22:50:04">
+    <Property Name="ElementName" Value="[dbo].[tbl_PDURecords].[Pdr_PDURecordEndDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDURecords]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Rec_PDURecordEndDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d5a8ee14-6de3-4541-9f36-4b4487355bad" ChangeDateTime="07/15/2014 22:50:06">
+    <Property Name="ElementName" Value="[dbo].[tbl_PDURecords].[Pdr_PDURecordWeight]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDURecords]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Rec_PDURecordWeight" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b3aa203d-d1a6-4e5a-a1be-c5f1d2191ea3" ChangeDateTime="07/15/2014 22:50:08">
+    <Property Name="ElementName" Value="[dbo].[tbl_PDURecords].[Pdr_AssetUniqueId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDURecords]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Rec_AssetUniqueId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7d02cc58-6ab2-4818-86f8-8abe738a40a8" ChangeDateTime="07/15/2014 22:50:12">
+    <Property Name="ElementName" Value="[dbo].[tbl_PDURecords].[Rec_PDURecordId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDURecords]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Rec_RecordId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="88c3c5ed-959a-4d11-8be6-1a8c8daf816c" ChangeDateTime="07/15/2014 22:50:15">
+    <Property Name="ElementName" Value="[dbo].[tbl_PDURecords].[Rec_PDURecordName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDURecords]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Rec_RecordName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5d224fe9-e5cd-46c5-99b3-5a581230807d" ChangeDateTime="07/15/2014 22:50:21">
+    <Property Name="ElementName" Value="[dbo].[tbl_PDURecords].[Rec_PDURecordStartDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDURecords]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Rec_RecordStartDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e9d75f37-077e-42a0-9c56-61f25ccf01db" ChangeDateTime="07/15/2014 22:50:23">
+    <Property Name="ElementName" Value="[dbo].[tbl_PDURecords].[Rec_PDURecordEndDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDURecords]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Rec_RecordEndDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2760c7cc-7ccb-4938-91e6-90085397e4e9" ChangeDateTime="07/15/2014 22:50:33">
+    <Property Name="ElementName" Value="[dbo].[tbl_PDURecords].[Rec_RecordId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDURecords]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Rec_PDURecordId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c6704492-7cc2-4fb3-a1d9-b1ece012f344" ChangeDateTime="07/15/2014 22:50:40">
+    <Property Name="ElementName" Value="[dbo].[tbl_PDURecords].[Rec_RecordName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDURecords]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Rec_PDURecordName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4eadc249-52e3-43ca-b2c1-44168be8c065" ChangeDateTime="07/15/2014 22:50:41">
+    <Property Name="ElementName" Value="[dbo].[tbl_PDURecords].[Rec_RecordStartDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDURecords]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Rec_PDURecordStartDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7cc18a33-d2ea-469f-9656-ea4d1a8691e0" ChangeDateTime="07/15/2014 22:57:07">
+    <Property Name="ElementName" Value="[dbo].[tbl_PduRecords].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PduRecords]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pdr_" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="95c45857-5e03-4c59-9fff-4f5b2a447575" ChangeDateTime="07/15/2014 22:57:21">
+    <Property Name="ElementName" Value="[dbo].[tbl_PduRecords].[Pdr_]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PduRecords]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pdr__PDUUniqueId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ceb7672c-1475-4fd5-a305-1809c52bd4e8" ChangeDateTime="07/15/2014 22:57:35">
+    <Property Name="ElementName" Value="[dbo].[tbl_PduRecords].[Prd_]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PduRecords]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Prd_PDURecordId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0770f994-eb44-40b6-84fc-2a15c2e8dd49" ChangeDateTime="07/15/2014 23:21:49">
+    <Property Name="ElementName" Value="[dbo].[tbl_Records].[Rec_PDURecordId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Records]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Rec_RecordId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5f8fda53-c3ad-4a98-bb6d-9199093e782b" ChangeDateTime="07/15/2014 23:21:52">
+    <Property Name="ElementName" Value="[dbo].[tbl_Records].[Rec_PDURecordName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Records]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Rec_RecordName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b28a28a9-fe7b-4d55-a271-0ea4a676e74f" ChangeDateTime="07/15/2014 23:21:54">
+    <Property Name="ElementName" Value="[dbo].[tbl_Records].[Rec_PDURecordStartDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Records]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Rec_RecordStartDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a4bfb31a-82e1-4894-8cfc-d7dab7643b73" ChangeDateTime="07/15/2014 23:21:58">
+    <Property Name="ElementName" Value="[dbo].[tbl_Records].[Rec_PDURecordWeight]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Records]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Rec_RecordWeight" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a53efcfc-a31a-49eb-9564-c74975d49bd4" ChangeDateTime="07/15/2014 23:22:32">
+    <Property Name="ElementName" Value="[dbo].[tbl_PDUs].[Pdu_PDUUniqueId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDUs]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pdu_UniqueId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="658172ab-770e-4b3a-9fdc-62ae66145c14" ChangeDateTime="07/15/2014 23:22:44">
+    <Property Name="ElementName" Value="[dbo].[tbl_Assets].[Ast_AssetUniqueId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Assets]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Ast_UniqueId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="26f186d2-b824-47a3-ac52-1b194a9a2966" ChangeDateTime="07/15/2014 23:22:47">
+    <Property Name="ElementName" Value="[dbo].[tbl_Assets].[Ast_AssetFileName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Assets]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Ast_FileName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="af621c2f-3868-461c-8e00-0121ec84acfa" ChangeDateTime="07/16/2014 17:04:02">
+    <Property Name="ElementName" Value="[dbo].[tbl_Assets].[Ast_UniqueId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Assets]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Ast_AssetUniqueId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6312725b-7bc9-40a9-8d97-4258e7777cef" ChangeDateTime="07/16/2014 17:04:18">
+    <Property Name="ElementName" Value="[dbo].[tbl_PDUs].[Pdu_UniqueId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDUs]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pdu_PDUUniqueId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c11dd960-0933-499b-9f9d-8fdd2676278b" ChangeDateTime="07/16/2014 17:04:35">
+    <Property Name="ElementName" Value="[dbo].[tbl_PDUs].[Pdu_PDUFileName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDUs]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pdu_FileName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="779ded8f-d77d-42e2-9a64-248fce2d08e9" ChangeDateTime="07/16/2014 17:04:38">
+    <Property Name="ElementName" Value="[dbo].[tbl_PDUs].[Pdu_PDUUpdateByWho]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDUs]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pdu_UpdateByWho" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7e84a9ea-2858-401d-afdb-22dbe1cd5172" ChangeDateTime="07/16/2014 17:04:42">
+    <Property Name="ElementName" Value="[dbo].[tbl_PDUs].[Pdu_PDUUpdateOnDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDUs]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pdu_UpdateOnDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="072dfdf4-45d4-48f8-aecf-90591c02f950" ChangeDateTime="07/16/2014 17:04:45">
+    <Property Name="ElementName" Value="[dbo].[tbl_PDUs].[Pdu_PDUType]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDUs]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pdu_Type" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1d75fae7-6614-4156-a618-69bbc42cccdc" ChangeDateTime="07/16/2014 17:06:16">
+    <Property Name="ElementName" Value="[dbo].[tbl_Assets].[Ast_AssetUniqueId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Assets]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Ast_AssetUniqueId1" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c056e162-5454-4eab-be52-884b620884bb" ChangeDateTime="07/16/2014 17:06:24">
+    <Property Name="ElementName" Value="[dbo].[tbl_Assets].[Ast_AssetUniqueId1]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Assets]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Ast_AssetUniqueId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="22dfb69f-4509-4c3b-bf23-8693c69199e5" ChangeDateTime="07/18/2014 21:33:45">
+    <Property Name="ElementName" Value="[dbo].[tbl_Records].[Rec_AssetUniqueId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Records]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Rec_AssetFileName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="376d0839-17e4-408a-8a08-b4cf5cede0e4" ChangeDateTime="08/14/2014 04:44:49">
+    <Property Name="ElementName" Value="[dbo].[tbl_Assets].[Ast_FileType]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Assets]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Ast_ScreenSize" />
+  </Operation>
+</Operations>

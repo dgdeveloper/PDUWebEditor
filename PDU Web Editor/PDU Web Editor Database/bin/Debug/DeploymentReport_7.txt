@@ -1,0 +1,21 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Rename
+       [dbo].[tbl_PDUs].[Pdu_PDURecordId] (Column)
+     Drop
+       [dbo].[fk_Pdr_PDURecordId] (Foreign Key)
+       [dbo].[ck_PDURecordWeight] (Check Constraint)
+     Create
+       [dbo].[fk_Pdu_PDURecordId] (Foreign Key)
+       [dbo].[ck_PDURecordWeight] (Check Constraint)
+
+** Supporting actions

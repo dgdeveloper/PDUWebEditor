@@ -1,0 +1,105 @@
+﻿@{
+    ViewBag.Title = "Home Page - PDU Releases";
+}
+@using PDU_Web_Editor.Models;
+
+@section scripts
+{
+    <script type="text/javascript">
+
+        function onDataBound(e) {
+            //Update button will be shown for new records only
+            this.table.find(".k-grid-edit").hide();
+
+        }
+        function onEdit(e) {
+            //record edit,down,preview button will not be shown for the new record
+            $("a.record-edit:first").hide();
+            $("a.record-download:first").hide();
+            $("a.record-preview:first").hide();
+
+        }
+        function showPopup(url) {
+            //open page in a new window
+            window.open(url, 'wndPopUp', 'width=800px,height=600px');
+        }
+    </script>
+}
+<div class="content-wrapper">
+    <div class="k-block">
+        <div class="k-header k-info-colored">
+            <span class="setting-title">PDU Releases</span>
+            <img class="setting-icon" src="@Url.Content("~/Images/settings-3.png")" alt="setting icon" />
+        </div>
+        <div class="k-widget">
+            @(Html.Kendo().Grid<PDU>() //Bind the grid to 
+                          .Name("grid")
+                          .Columns(columns =>
+                          {
+                              // Create a column bound to the PDU FileName property
+                              columns.Bound(pdu => pdu.Pdu_FileName).Title("Name");
+                              // Create a column bound to the PDU UpdatedByWho property
+                              columns.Bound(pdu => pdu.Pdu_UpdateByWho).Title("Updated By");
+                              // Create a column bound to the PDU UpdatedOnDate property
+                              columns.Bound(pdu => pdu.Pdu_UpdateOnDate).Format("{0:M/d/yyyy HH:mm:ss}").Title("Updated On");
+                              // Create a column bound to the PDU Type property
+                              columns.Bound(pdu => pdu.Pdu_Type).EditorTemplateName("_PDUTypeEditor").Title("Type");
+                              // Create a column bound to the PDU Screen size property
+                              columns.Bound(pdu => pdu.Pdu_ScreenSize).EditorTemplateName("_ScreenSizeEditor").Title("Screen Size");
+                              //create a column for the edit button
+                              columns.Bound(pdu => pdu.Pdu_PDUUniqueId).Template(e => { }).
+                                                      ClientTemplate("<a  class=\"k-button k-button-icontext record-edit\" href=\" " +
+                                                                          @Url.Action("PDURecords_Update", "PDU") + "/#= Pdu_PDUUniqueId #   " + "\">"
+                                                                          + "<span class=\"k-icon k-edit\"></span>Edit</a> ")
+                                                      .Title("Edit");
+                              //create a column for the download button
+                              columns.Bound(pdu => pdu.Pdu_PDUUniqueId).Template(e => { }).
+                                                      ClientTemplate("<a  class=\"k-button k-button-icontext record-download\" href=\" " +
+                                                                          @Url.Action("PDU_Download", "PDU") + "/#= Pdu_PDUUniqueId #   " + "\">"
+                                                                          + "<span class=\"k-icon k-i-seek-s\"></span>Download</a> ")
+                                                      .Title("Download");
+                              //create a column for the preview button. keep this for debugging
+                              //columns.Bound(pdu => pdu.Pdu_PDUUniqueId).Template(e => { }).
+                              //                        ClientTemplate("<a  class=\"k-button k-button-icontext record-preview\" href=\" " +
+                              //                                            @Url.Action("PDU_Preview", "PDU") + "/#= Pdu_PDUUniqueId #   " + "\" target=\"_blank\" + width: 100px; height: 200px>"
+                              //                                            + "<span class=\"k-icon k-i-search\"></span>preview</a> ")
+                              //                        .Title("Preview");
+                              columns.Bound(pdu => pdu.Pdu_PDUUniqueId).Template(e => { }).
+                                                       ClientTemplate("<a  class=\"k-button k-button-icontext record-preview\" onclick=\"showPopup('  " + @Url.Action("PDU_Preview", "PDU") + "/#= Pdu_PDUUniqueId #   " + "')\" href=\"\" /> "
+                                                          + "<span class=\"k-icon k-i-search\"></span>preview</a> ")
+                                                  .Title("Preview");
+                              columns.Command(commands =>
+                              {
+                                  commands.Edit();
+                                  commands.Destroy(); // The "destroy" command removes data items
+                              }).Title("Delete");
+                          })
+                          .ToolBar(toolbar => { toolbar.Create().Text("Add a new PDU release"); 
+                                              }
+                                   ) // The "create" command adds new data items
+                          .Editable(editable => editable.Mode(GridEditMode.InLine)) // Use inline editing mode
+                          .Pageable() // Enable paging
+                          .Sortable() // Enable sorting
+                          .DataSource(dataSource => dataSource
+                                      .Ajax()
+                                      .Model(model =>
+                                       {
+                                           model.Id(pdu => pdu.Pdu_PDUUniqueId); // Specify the property which is the unique identifier of the model
+                                           model.Field(pdu => pdu.Pdu_PDUUniqueId).Editable(false); // Make the pdu Id property not editable
+                                           model.Field(pdu => pdu.Pdu_UpdateByWho).Editable(false); // Make the pdu updateByWho property not editable
+                                           model.Field(pdu => pdu.Pdu_UpdateOnDate).Editable(false); // Make the pdu updateOnDate property not editable
+                                       })
+                                      //.Read(read => read.Action("PDUs_Read", "PDU"))
+                                      .Read(read => read.Url(@Url.Action("PDUs_Read", "PDU")))
+                                      .Create(create => create.Action("PDUs_Create", "PDU"))
+                                      .Update(update => update.Action("PDUs_Update", "PDU"))
+                                      .Destroy(destroy => destroy.Action("PDUs_Delete", "PDU")) 
+                           )
+                           .Events(events => events.Edit("onEdit")
+                                                   .DataBound("onDataBound")
+                                  )
+             )
+        </div>     
+    </div>
+</div>
+

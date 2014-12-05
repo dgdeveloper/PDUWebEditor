@@ -1,0 +1,42 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[tbl_Assets]
+       [dbo].[tbl_PDURecords]
+       [dbo].[tbl_PDUs]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The type for column Ast_AssetUniqueId in table [dbo].[tbl_Assets] is currently  UNIQUEIDENTIFIER NOT NULL but is being
+         changed to  INT IDENTITY (1, 1) NOT NULL. There is no implicit or explicit conversion.
+       The type for column Pdr_AssetUniqueId in table [dbo].[tbl_PDURecords] is currently  UNIQUEIDENTIFIER NULL but is being
+         changed to  INT NULL. There is no implicit or explicit conversion.
+       The type for column Pdr_PDURecordId in table [dbo].[tbl_PDURecords] is currently  UNIQUEIDENTIFIER NOT NULL but is being
+         changed to  INT IDENTITY (1, 1) NOT NULL. There is no implicit or explicit conversion.
+       The type for column Pdr_PDURecordId in table [dbo].[tbl_PDUs] is currently  UNIQUEIDENTIFIER NOT NULL but is being
+         changed to  INT NULL. There is no implicit or explicit conversion.
+       The type for column Pdu_PDUUniqueId in table [dbo].[tbl_PDUs] is currently  UNIQUEIDENTIFIER NOT NULL but is being
+         changed to  INT IDENTITY (1, 1) NOT NULL. There is no implicit or explicit conversion.
+
+** User actions
+     Table rebuild
+       [dbo].[tbl_Assets] (Table)
+       [dbo].[tbl_PDURecords] (Table)
+       [dbo].[tbl_PDUs] (Table)
+     Create
+       [dbo].[fk_Pdr_PDURecordId] (Foreign Key)
+       [dbo].[ck_PDURecordWeight] (Check Constraint)
+
+** Supporting actions
+     Drop
+       [dbo].[fk_AssetUinqueId] (Foreign Key)
+     Create
+       [dbo].[fk_AssetUinqueId] (Foreign Key)
+
+The type for column Ast_AssetUniqueId in table [dbo].[tbl_Assets] is currently  UNIQUEIDENTIFIER NOT NULL but is being changed to  INT IDENTITY (1, 1) NOT NULL. There is no implicit or explicit conversion.
+The type for column Pdr_AssetUniqueId in table [dbo].[tbl_PDURecords] is currently  UNIQUEIDENTIFIER NULL but is being changed to  INT NULL. There is no implicit or explicit conversion.
+The type for column Pdr_PDURecordId in table [dbo].[tbl_PDURecords] is currently  UNIQUEIDENTIFIER NOT NULL but is being changed to  INT IDENTITY (1, 1) NOT NULL. There is no implicit or explicit conversion.
+The type for column Pdr_PDURecordId in table [dbo].[tbl_PDUs] is currently  UNIQUEIDENTIFIER NOT NULL but is being changed to  INT NULL. There is no implicit or explicit conversion.
+The type for column Pdu_PDUUniqueId in table [dbo].[tbl_PDUs] is currently  UNIQUEIDENTIFIER NOT NULL but is being changed to  INT IDENTITY (1, 1) NOT NULL. There is no implicit or explicit conversion.
+

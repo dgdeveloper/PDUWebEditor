@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Schedule>
+  <Product>
+    <ID>1</ID>
+    <Name>Education</Name>
+    <Location>Animations/SmallAds/23560_PDU_shortAd.swf</Location>
+	<StartDate></StartDate>
+	<LastDate></LastDate>
+	<Weight>1</Weight>
+  </Product>  
+</Schedule>

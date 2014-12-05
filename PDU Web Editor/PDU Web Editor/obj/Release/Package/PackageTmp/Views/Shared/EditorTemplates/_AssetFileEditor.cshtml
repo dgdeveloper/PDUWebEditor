@@ -1,0 +1,14 @@
+﻿<!--asset drop down list editor template on Record List page  -->
+@model PDU_Web_Editor.Models.Record
+@{
+    ViewBag.Title = "_AssetFileEditor";
+}
+
+
+@(Html.Kendo().DropDownListFor(m => m)
+    .OptionLabel("Select a asset")
+    .DataValueField("Ast_FileName") // The value of the dropdown is taken from the Ast_FileName property
+    .DataTextField("Ast_FileName") // The text of the items is taken from the Ast_FileName property
+    .BindTo((System.Collections.IEnumerable)ViewData["assets"])
+
+)

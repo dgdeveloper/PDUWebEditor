@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Schedule>
+<Product>    
+  	<ID>10</ID>
+  	<Name>SW_CadillacRiches - Jun2-Jul6.2014</Name>
+  	<Location>Images/VSplitAds/SW_Cadillac_Half.swf</Location>
+  	<StartDate>11688</StartDate>
+  	<LastDate>11723</LastDate>
+  	<Weight>4</Weight>  
+  </Product>
+<Product>    
+  	<ID>10</ID>
+  	<Name>649 SuperDraw-June1-27.2014</Name>
+  	<Location>Images/VSplitAds/SuperDraw_Half.swf</Location>
+  	<StartDate>11687</StartDate>
+	<LastDate>11714</LastDate>
+	<Weight>5</Weight>
+  </Product>
+<Product>    
+  	<ID>12</ID>
+  	<Name>GameSense-Odds-June2-July7.2014</Name>
+  	<Location>Images/VSplitAds/GS_Odds_Half.swf</Location>
+  	<StartDate>11688</StartDate>
+  	<LastDate>11723</LastDate>
+  	<Weight>1</Weight>  
+  </Product>
+<Product>    
+  	<ID>13</ID>
+  	<Name>GameSense-Lucky-July7-Aug11.2014</Name>
+  	<Location>Images/VSplitAds/GS_Lucky_Half.swf</Location>
+  	<StartDate>11723</StartDate>
+  	<LastDate>11758</LastDate>
+  	<Weight>1</Weight>  
+  </Product>
+<Product>    
+  	<ID>11</ID>
+  	<Name>GameSense-Budget-Aug11-Sept8.2014</Name>
+  	<Location>Images/VSplitAds/GS_Budget_Half.swf</Location>
+  	<StartDate>11758</StartDate>
+  	<LastDate>11786</LastDate>
+  	<Weight>1</Weight>  
+  </Product>
+<Product>    
+  	<ID>16</ID>    
+  	<Name>Lotto Max-20Pkg-June2-July7.2014</Name>
+  	<Location>Images/VSplitAds/LM_20Pkg_Half.swf</Location>
+  	<StartDate>11688</StartDate>
+  	<LastDate>11723</LastDate>
+  	<Weight>2</Weight> 
+  </Product>
+<Product>    
+  	<ID>14</ID>    
+  	<Name>Lotto Max-40Pkg-July7-Aug11.2014</Name>
+  	<Location>Images/VSplitAds/LM_40Pkg_Half.swf</Location>
+  	<StartDate>11723</StartDate>
+  	<LastDate>11758</LastDate>
+  	<Weight>2</Weight> 
+  </Product>
+<Product>    
+  	<ID>15</ID>    
+  	<Name>Lotto Max-12Pkg-Aug11-Sept8.2014</Name>
+  	<Location>Images/VSplitAds/LM_12Pkg_Half.swf</Location>
+  	<StartDate>11758</StartDate>
+  	<LastDate>11786</LastDate>
+  	<Weight>2</Weight> 
+  </Product>
+<Product>
+	<ID>17</ID>
+	<Name>Problem Gambling-Jun2-July7</Name>
+	<Location>Images/VSplitAds/ProbGam_Half.swf</Location>
+	<StartDate>11688</StartDate>
+	<LastDate>11723</LastDate>
+	<Weight>1</Weight>
+  </Product>
+<Product>    
+  	<ID>19</ID>    
+  	<Name>Mobile PDU-Subscriptions</Name>
+  	<Location>Images/VSplitAds/Mobile_PDU_Half.swf</Location>
+  	<StartDate></StartDate>
+  	<LastDate></LastDate>
+  	<Weight>4</Weight>  
+  </Product>
+</Schedule>  
+ 

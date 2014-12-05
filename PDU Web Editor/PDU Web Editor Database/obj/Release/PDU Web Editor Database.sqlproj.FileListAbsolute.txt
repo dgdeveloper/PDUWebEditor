@@ -1,0 +1,9 @@
+C:\workspace\PDU Editor\PDU Web Editor\PDU Web Editor Database\bin\Release\PDU Web Editor Database.dacpac
+C:\workspace\PDU Editor\PDU Web Editor\PDU Web Editor Database\bin\Release\PDU_Web_Editor_Database.dll
+C:\workspace\PDU Editor\PDU Web Editor\PDU Web Editor Database\bin\Release\PDU_Web_Editor_Database.pdb
+C:\workspace\PDU Editor\PDU Web Editor\PDU Web Editor Database\obj\Release\PDU_Web_Editor_Database.dll
+C:\workspace\PDU Editor\PDU Web Editor\PDU Web Editor Database\obj\Release\PDU_Web_Editor_Database.pdb
+C:\workspace\PDU Editor\PDU Web Editor\PDU Web Editor Database\obj\Release\Model.xml
+C:\workspace\PDU Editor\PDU Web Editor\PDU Web Editor Database\obj\Release\refactor.xml
+C:\workspace\PDU Editor\PDU Web Editor\PDU Web Editor Database\obj\Release\postdeploy.sql
+C:\workspace\PDU Editor\PDU Web Editor\PDU Web Editor Database\obj\Release\predeploy.sql

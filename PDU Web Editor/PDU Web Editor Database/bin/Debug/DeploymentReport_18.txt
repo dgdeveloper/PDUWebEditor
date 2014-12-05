@@ -1,0 +1,20 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[tbl_Assets] (Table)
+       [dbo].[tbl_PDUs] (Table)
+       [dbo].[tbl_Records] (Table)
+       [dbo].[fk_Rec_AssetUniqueId] (Foreign Key)
+       [dbo].[fk_Rec_PDUUniqueId] (Foreign Key)
+       [dbo].[ck_Rec_PDURecordWeight] (Check Constraint)
+
+** Supporting actions

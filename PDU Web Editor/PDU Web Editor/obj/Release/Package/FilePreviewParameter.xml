@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="PDUWebEditor" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\workspace\\VS\ Team\ Service\ Project\\PDU\ Web\ Editor\\PDU\ Web\ Editor\\PDU\ Web\ Editor\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\workspace\\VS\ Team\ Service\ Project\\PDU\ Web\ Editor\\PDU\ Web\ Editor\\PDU\ Web\ Editor\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="PDUDbContext-Web.config Connection String" description="" value="Data Source=WSK866\DEV;Initial Catalog=&quot;PDU Web Editor Database_Local&quot;;User ID=pdu;Password=pdu@123;Application Name=EntityFramework" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\workspace\\VS\ Team\ Service\ Project\\PDU\ Web\ Editor\\PDU\ Web\ Editor\\PDU\ Web\ Editor\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='PDUDbContext']/@connectionString" />
+  </parameter>
+</parameters>

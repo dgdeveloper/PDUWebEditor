@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Skins>
+  <Skin>
+    <Location>Skins/Metallic.swf</Location>
+    <TransactionLocation>Skins/MetallicTransaction.swf</TransactionLocation>
+	<StartDate></StartDate>
+	<LastDate></LastDate>
+  </Skin>
+</Skins>

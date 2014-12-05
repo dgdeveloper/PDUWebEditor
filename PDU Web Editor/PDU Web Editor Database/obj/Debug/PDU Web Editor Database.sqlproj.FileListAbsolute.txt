@@ -1,0 +1,27 @@
+C:\workspace\PDU Editor\PDU Web Editor\PDU Web Editor Database\bin\Debug\PDU Web Editor Database.dacpac
+C:\workspace\PDU Editor\PDU Web Editor\PDU Web Editor Database\bin\Debug\PDU_Web_Editor_Database.dll
+C:\workspace\PDU Editor\PDU Web Editor\PDU Web Editor Database\bin\Debug\PDU_Web_Editor_Database.pdb
+C:\workspace\PDU Editor\PDU Web Editor\PDU Web Editor Database\obj\Debug\Model.xml
+C:\workspace\PDU Editor\PDU Web Editor\PDU Web Editor Database\obj\Debug\refactor.xml
+C:\workspace\PDU Editor\PDU Web Editor\PDU Web Editor Database\obj\Debug\postdeploy.sql
+C:\workspace\PDU Editor\PDU Web Editor\PDU Web Editor Database\obj\Debug\predeploy.sql
+C:\workspace\PDU Editor\PDU Web Editor\PDU Web Editor Database\obj\Debug\PDU_Web_Editor_Database.dll
+C:\workspace\PDU Editor\PDU Web Editor\PDU Web Editor Database\obj\Debug\PDU_Web_Editor_Database.pdb
+C:\workspace\VS Team Service Project\PDU Web Editor\PDU Web Editor\PDU Web Editor Database\bin\Debug\PDU Web Editor Database.dacpac
+C:\workspace\VS Team Service Project\PDU Web Editor\PDU Web Editor\PDU Web Editor Database\bin\Debug\PDU_Web_Editor_Database.dll
+C:\workspace\VS Team Service Project\PDU Web Editor\PDU Web Editor\PDU Web Editor Database\bin\Debug\PDU_Web_Editor_Database.pdb
+C:\workspace\VS Team Service Project\PDU Web Editor\PDU Web Editor\PDU Web Editor Database\obj\Debug\Model.xml
+C:\workspace\VS Team Service Project\PDU Web Editor\PDU Web Editor\PDU Web Editor Database\obj\Debug\refactor.xml
+C:\workspace\VS Team Service Project\PDU Web Editor\PDU Web Editor\PDU Web Editor Database\obj\Debug\postdeploy.sql
+C:\workspace\VS Team Service Project\PDU Web Editor\PDU Web Editor\PDU Web Editor Database\obj\Debug\predeploy.sql
+C:\workspace\VS Team Service Project\PDU Web Editor\PDU Web Editor\PDU Web Editor Database\obj\Debug\PDU_Web_Editor_Database.dll
+C:\workspace\VS Team Service Project\PDU Web Editor\PDU Web Editor\PDU Web Editor Database\obj\Debug\PDU_Web_Editor_Database.pdb
+C:\Workspace\BCLC QA project\VS Team Service Project\PDU Web Editor\PDU Web Editor\PDU Web Editor Database\bin\Debug\PDU Web Editor Database.dacpac
+C:\Workspace\BCLC QA project\VS Team Service Project\PDU Web Editor\PDU Web Editor\PDU Web Editor Database\bin\Debug\PDU_Web_Editor_Database.dll
+C:\Workspace\BCLC QA project\VS Team Service Project\PDU Web Editor\PDU Web Editor\PDU Web Editor Database\bin\Debug\PDU_Web_Editor_Database.pdb
+C:\Workspace\BCLC QA project\VS Team Service Project\PDU Web Editor\PDU Web Editor\PDU Web Editor Database\obj\Debug\PDU_Web_Editor_Database.dll
+C:\Workspace\BCLC QA project\VS Team Service Project\PDU Web Editor\PDU Web Editor\PDU Web Editor Database\obj\Debug\PDU_Web_Editor_Database.pdb
+C:\Workspace\BCLC QA project\VS Team Service Project\PDU Web Editor\PDU Web Editor\PDU Web Editor Database\obj\Debug\Model.xml
+C:\Workspace\BCLC QA project\VS Team Service Project\PDU Web Editor\PDU Web Editor\PDU Web Editor Database\obj\Debug\refactor.xml
+C:\Workspace\BCLC QA project\VS Team Service Project\PDU Web Editor\PDU Web Editor\PDU Web Editor Database\obj\Debug\postdeploy.sql
+C:\Workspace\BCLC QA project\VS Team Service Project\PDU Web Editor\PDU Web Editor\PDU Web Editor Database\obj\Debug\predeploy.sql

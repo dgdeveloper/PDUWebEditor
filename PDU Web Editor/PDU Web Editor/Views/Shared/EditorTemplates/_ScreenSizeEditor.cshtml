@@ -1,0 +1,16 @@
+﻿<!--screen size drop down list editor template on PDU releases page -->
+
+@{
+    ViewBag.Title = "_ScreenSizeEditor";
+}
+
+@(Html.Kendo().DropDownListFor(e => e).BindTo(new string[]{
+                                               "VSplit"
+                                               ,
+                                               "FullScreen"  
+                                             })
+                                      .OptionLabel("Select a screen size")
+                                      .HtmlAttributes(new { style="width:auto" })@*if auto not given, the control takes up the whole space*@
+ )
+
+

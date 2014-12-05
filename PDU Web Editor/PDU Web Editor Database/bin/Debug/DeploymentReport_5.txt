@@ -1,0 +1,29 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[tbl_PDURecords]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The type for column Pdr_PDURecordStartDate in table [dbo].[tbl_PDURecords] is currently  DATE NOT NULL but is being
+         changed to  INT NOT NULL. There is no implicit or explicit conversion.
+
+** User actions
+     Drop
+       [dbo].[ck_PDURecordWeight] (Check Constraint)
+     Table rebuild
+       [dbo].[tbl_PDURecords] (Table)
+     Create
+       [dbo].[ck_PDURecordWeight] (Check Constraint)
+
+** Supporting actions
+     Drop
+       [dbo].[fk_AssetUinqueId] (Foreign Key)
+       [dbo].[fk_Pdr_PDURecordId] (Foreign Key)
+     Create
+       [dbo].[fk_AssetUinqueId] (Foreign Key)
+       [dbo].[fk_Pdr_PDURecordId] (Foreign Key)
+
+The type for column Pdr_PDURecordStartDate in table [dbo].[tbl_PDURecords] is currently  DATE NOT NULL but is being changed to  INT NOT NULL. There is no implicit or explicit conversion.
+
