@@ -15,7 +15,15 @@ namespace PDU_Web_Editor.Controllers
 {
     public class PDUController : Controller
     {
-        private UnitOfWork _unitOfWork = new UnitOfWork();
+        private IUnitOfWork _unitOfWork;
+
+        public PDUController() : this(new SqlUnitOfWork(new PDUDbContext())) { }
+
+        public PDUController(IUnitOfWork unitOfWork)
+        {
+            this._unitOfWork = unitOfWork;
+
+        }
         
         public ActionResult Index()
         {

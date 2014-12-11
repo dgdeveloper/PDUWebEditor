@@ -12,8 +12,15 @@ namespace PDU_Web_Editor.Controllers
 {
     public class RecordController : Controller
     {
-        private UnitOfWork _unitOfWork = new UnitOfWork();
+        private IUnitOfWork _unitOfWork;
 
+        public RecordController() : this(new SqlUnitOfWork(new PDUDbContext())) { }
+
+        public RecordController(IUnitOfWork unitOfWork)
+        {
+            this._unitOfWork = unitOfWork;
+
+        }
         public ActionResult Index(int id)
         {
             ViewBag.Message = "Records Page";

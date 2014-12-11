@@ -158,16 +158,11 @@
     <Compile Include="Controllers\PDUController.cs" />
     <Compile Include="Controllers\RecordController.cs" />
     <Compile Include="Controllers\SettingController.cs" />
-    <Compile Include="DAL\AssetRepository.cs" />
-    <Compile Include="DAL\IAssetRepository.cs" />
-    <Compile Include="DAL\IPDURepository.cs" />
-    <Compile Include="DAL\IRecordRepository.cs" />
-    <Compile Include="DAL\IRepository.cs" />
-    <Compile Include="DAL\PDUDbContext.cs" />
-    <Compile Include="DAL\RecordRepository.cs" />
-    <Compile Include="DAL\PDURepository.cs" />
-    <Compile Include="DAL\RepositoryBase.cs" />
-    <Compile Include="DAL\UnitOfWork.cs" />
+    <Compile Include="DAL\Interface\IRepository.cs" />
+    <Compile Include="DAL\Interface\IUnitOfWork.cs" />
+    <Compile Include="DAL\Infrastructure\PDUDbContext.cs" />
+    <Compile Include="DAL\Infrastructure\DbRepositoryBase.cs" />
+    <Compile Include="DAL\Infrastructure\SqlUnitOfWork.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

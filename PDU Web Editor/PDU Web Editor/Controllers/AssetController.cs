@@ -15,7 +15,15 @@ namespace PDU_Web_Editor.Controllers
 {
     public class AssetController : Controller
     {
-        private UnitOfWork _unitOfWork = new UnitOfWork();
+        private IUnitOfWork _unitOfWork;
+
+        public AssetController() : this(new SqlUnitOfWork(new PDUDbContext())) { }
+
+        public AssetController(IUnitOfWork unitOfWork)
+        {
+            this._unitOfWork = unitOfWork;
+
+        }
 
         public ActionResult Index()
         {
@@ -79,7 +87,7 @@ namespace PDU_Web_Editor.Controllers
                
                 file.SaveAs(destinationPath);
                 //update asset db table
-                using (AssetRepository assetRepository = _unitOfWork.AssetRepository)
+                using (var assetRepository = _unitOfWork.AssetRepository)
                 {
                     //Create a new Asset Entity
                     Asset newAsset = new Asset
@@ -120,7 +128,7 @@ namespace PDU_Web_Editor.Controllers
             //delete the physical file
             System.IO.File.Delete(destinationPath);
             //update db table
-            using (AssetRepository assetRepository = _unitOfWork.AssetRepository)
+            using (var assetRepository = _unitOfWork.AssetRepository)
             {
                 assetRepository.Delete(asset.Ast_FileName);
                 assetRepository.Save();

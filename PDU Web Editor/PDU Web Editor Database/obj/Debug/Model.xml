@@ -12,7 +12,7 @@
 		</CustomData>
 		<CustomData Category="Reference" Type="Assembly">
 			<Metadata Name="LogicalName" Value="PDU_Web_Editor_Database.dll" />
-			<Metadata Name="FileName" Value="C:\WORKSPACE\BCLC QA PROJECT\VS TEAM SERVICE PROJECT\PDU WEB EDITOR\PDU WEB EDITOR\PDU WEB EDITOR DATABASE\OBJ\DEBUG\PDU_WEB_EDITOR_DATABASE.DLL" />
+			<Metadata Name="FileName" Value="C:\WORKSPACE\BCLC QA PROJECT\GITHUB PROJECT\PDU WEB EDITOR\PDU WEB EDITOR\PDU WEB EDITOR DATABASE\OBJ\DEBUG\PDU_WEB_EDITOR_DATABASE.DLL" />
 			<Metadata Name="AssemblyName" Value="PDU_Web_Editor_Database" />
 			<Metadata Name="PermissionSet" Value="SAFE" />
 			<Metadata Name="Owner" Value="" />
@@ -20,7 +20,7 @@
 			<Metadata Name="IsVisible" Value="True" />
 			<Metadata Name="IsModelAware" Value="True" />
 			<Metadata Name="SkipCreationIfEmpty" Value="True" />
-			<Metadata Name="AssemblySymbolsName" Value="C:\Workspace\BCLC QA project\VS Team Service Project\PDU Web Editor\PDU Web Editor\PDU Web Editor Database\obj\Debug\PDU_Web_Editor_Database.pdb" />
+			<Metadata Name="AssemblySymbolsName" Value="C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDU Web Editor Database\obj\Debug\PDU_Web_Editor_Database.pdb" />
 		</CustomData>
 		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
 	</Header>
