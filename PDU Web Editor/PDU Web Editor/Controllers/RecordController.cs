@@ -8,7 +8,7 @@ using System.Web.Mvc;
 using PDU_Web_Editor.DAL;
 using PDU_Web_Editor.Models;
 
-namespace PDU_Web_Editor.Controllers
+namespace PDU_Web_Editor.ControllersTestSet
 {
     public class RecordController : Controller
     {
@@ -28,9 +28,9 @@ namespace PDU_Web_Editor.Controllers
             //populate for asset drop down list data binding
             PopulateAssets();
             PDU pdu = _unitOfWork.PDURepository.GetByID(id);
-            return View(pdu);
+            return View("Index",pdu);
         }
-
+        
         private void PopulateAssets()
         {
             var assetRepository = _unitOfWork.AssetRepository;
@@ -41,6 +41,7 @@ namespace PDU_Web_Editor.Controllers
                 Ast_UpdatedByWho = e.Ast_UpdatedByWho,
                 Ast_UpdatedOnDate = e.Ast_UpdatedOnDate,
                 Ast_FileLocation = e.Ast_FileLocation,
+                Ast_ScreenSize = e.Ast_ScreenSize,
             });
             ViewData["assets"] = assets;    
         }
@@ -87,10 +88,13 @@ namespace PDU_Web_Editor.Controllers
                     //update pdu 
                     using (var pduRepository = _unitOfWork.PDURepository)
                     {
-                        PDU pdu = pduRepository.GetByID(pduId);
-                        pdu.Pdu_UpdateByWho = HttpContext.User.Identity.Name;
-                        pdu.Pdu_UpdateOnDate = DateTime.Now;
-                        pduRepository.Save();
+                        if (pduRepository.GetByID(recordToBeUpdated.Rec_PDUUniqueId) != null)
+                        {
+                            PDU pdu = pduRepository.GetByID(recordToBeUpdated.Rec_PDUUniqueId);
+                            pdu.Pdu_UpdateByWho = HttpContext.User.Identity.Name;
+                            pdu.Pdu_UpdateOnDate = DateTime.Now;
+                            pduRepository.Save();
+                        }   
                     }
                 }
         
@@ -148,10 +152,13 @@ namespace PDU_Web_Editor.Controllers
                     //update pdu 
                     using (var pduRepository = _unitOfWork.PDURepository)
                     {
-                        PDU pdu = pduRepository.GetByID(pduId);
-                        pdu.Pdu_UpdateByWho = HttpContext.User.Identity.Name;
-                        pdu.Pdu_UpdateOnDate = DateTime.Now;
-                        pduRepository.Save();
+                        if (pduRepository.GetByID(recordToBeCreated.Rec_PDUUniqueId) != null)
+                        {
+                            PDU pdu = pduRepository.GetByID(recordToBeCreated.Rec_PDUUniqueId);
+                            pdu.Pdu_UpdateByWho = HttpContext.User.Identity.Name;
+                            pdu.Pdu_UpdateOnDate = DateTime.Now;
+                            pduRepository.Save();
+                        }
                     }
                 }
 

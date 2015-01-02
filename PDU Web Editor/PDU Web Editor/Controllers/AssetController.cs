@@ -11,7 +11,7 @@ using System.IO;
 
 
 
-namespace PDU_Web_Editor.Controllers
+namespace PDU_Web_Editor.ControllersTestSet
 {
     public class AssetController : Controller
     {
@@ -39,7 +39,7 @@ namespace PDU_Web_Editor.Controllers
                                                                  Value = "FullScreen"
                                                             }
                                                          };
-               return View();
+               return View("Index");
         }
 
         public ActionResult Assets_Read([DataSourceRequest]DataSourceRequest request)

@@ -1,70 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="PDU_Web_Editor.DAL.AssetRepository" Collapsed="true">
-    <Position X="0.5" Y="5.75" Width="1.5" />
+  <Class Name="PDU_Web_Editor.DAL.SqlUnitOfWork">
+    <Position X="3.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>DAL\AssetRepository.cs</FileName>
+      <HashCode>AAIAAKAAACAAhAAAAAAQAAAAAAAAAAAgAAAQAAAAAAA=</HashCode>
+      <FileName>DAL\Infrastructure\SqlUnitOfWork.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="PDU_Web_Editor.DAL.PDUDbContext" Collapsed="true">
-    <Position X="7.5" Y="3.75" Width="1.5" />
+  <Class Name="PDU_Web_Editor.DAL.DbRepositoryBase&lt;TEntity&gt;">
+    <Position X="1" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AACAAAAAAAAAACAAAAAAAAAAEAAAAAAAAAAgAAAAAAA=</HashCode>
-      <FileName>DAL\PDUDbContext.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="PDU_Web_Editor.DAL.PDURepository" Collapsed="true">
-    <Position X="4.75" Y="5.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>DAL\PDURepository.cs</FileName>
+      <HashCode>AAYCAMAAACAAAABAAAAAAAAAAAEAAAAACAAAgAAAAAA=</HashCode>
+      <FileName>DAL\Infrastructure\DbRepositoryBase.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="PDU_Web_Editor.DAL.RepositoryBase&lt;TEntity&gt;" Collapsed="true">
-    <Position X="2.75" Y="4" Width="1.5" />
+  <Class Name="PDU_Web_Editor.DAL.PDUDbContext">
+    <Position X="6" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQCAEAAAAAAAABAAAAAAAAAAAEAAAAACAAAgAAAAAA=</HashCode>
-      <FileName>DAL\RepositoryBase.cs</FileName>
+      <HashCode>IAAAAAAAAAAAACAAAAAAAAAAEAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>DAL\Infrastructure\PDUDbContext.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
-  <Class Name="PDU_Web_Editor.DAL.RecordRepository" Collapsed="true">
-    <Position X="2.75" Y="5.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>DAL\RecordRepository.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Interface Name="PDU_Web_Editor.DAL.IAssetRepository" Collapsed="true">
-    <Position X="1" Y="2.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>DAL\IAssetRepository.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="PDU_Web_Editor.DAL.IPDURepository" Collapsed="true">
-    <Position X="4.75" Y="2.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>DAL\IPDURepository.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
   <Interface Name="PDU_Web_Editor.DAL.IRepository&lt;TEntity&gt;" Collapsed="true">
-    <Position X="2.25" Y="0.75" Width="1.5" />
+    <Position X="1" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAEAAAAAAAABAAAAAAAAAAAEAAAAAAAAAgAAAAAA=</HashCode>
-      <FileName>DAL\IRepository.cs</FileName>
+      <HashCode>AAQAAMAAAAAAAABAAAAAAAAAAAEAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>DAL\Interface\IRepository.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="PDU_Web_Editor.DAL.IRecordRepository" Collapsed="true">
-    <Position X="3" Y="2.5" Width="1.5" />
+  <Interface Name="PDU_Web_Editor.DAL.IUnitOfWork" Collapsed="true">
+    <Position X="3.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>DAL\IRecordRepository.cs</FileName>
+      <HashCode>AAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAgAAAQAAAAAAA=</HashCode>
+      <FileName>DAL\Interface\IUnitOfWork.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

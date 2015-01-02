@@ -6,13 +6,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using PDU_Web_Editor.Common;
+using PDU_Web_Editor.DAL.Interface;
 
 namespace PDU_Web_Editor.Models
 {
     /// <summary>
     /// a Entity type for tbl_Records database table
     /// </summary>
-    public class Record
+    public class Record : IEntity
     {
         [Key]
         public int Rec_RecordId { get; set; }
@@ -48,5 +49,14 @@ namespace PDU_Web_Editor.Models
         [ForeignKey("PDU")]
         public int Rec_PDUUniqueId { get; set; }
         public virtual PDU PDU { get; set; }
+
+        #region IEntity Members
+
+        public string Id
+        {
+            get { return this.Rec_RecordId.ToString(); }
+        }
+
+        #endregion
     }
 }

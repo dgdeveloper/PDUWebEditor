@@ -158,6 +158,7 @@
     <Compile Include="Controllers\PDUController.cs" />
     <Compile Include="Controllers\RecordController.cs" />
     <Compile Include="Controllers\SettingController.cs" />
+    <Compile Include="DAL\Interface\IEntity.cs" />
     <Compile Include="DAL\Interface\IRepository.cs" />
     <Compile Include="DAL\Interface\IUnitOfWork.cs" />
     <Compile Include="DAL\Infrastructure\PDUDbContext.cs" />

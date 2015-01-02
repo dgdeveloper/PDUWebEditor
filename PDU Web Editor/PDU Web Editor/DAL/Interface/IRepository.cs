@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PDU_Web_Editor.DAL.Interface;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PDU_Web_Editor.DAL
 {
-    public interface IRepository<TEntity> : IDisposable where TEntity : class 
+    public interface IRepository<TEntity> : IDisposable where TEntity : class ,IEntity
     {
         /// <summary>
         /// Add entity to the repository 

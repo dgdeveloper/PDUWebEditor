@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PDU_Web_Editor.DAL.Interface;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -12,7 +13,7 @@ namespace PDU_Web_Editor.Models
     /// <summary>
     /// a Entity type for tbl_PUDs database table
     /// </summary>
-    public class PDU
+    public class PDU : IEntity
     {
         [Key]
         public int Pdu_PDUUniqueId { get; set; }
@@ -33,5 +34,14 @@ namespace PDU_Web_Editor.Models
         public string Pdu_ScreenSize { get; set; }
 
         public virtual ICollection<Record> Records { get; set; }
+
+        #region IEntity Members
+
+        public string Id
+        {
+            get { return this.Pdu_PDUUniqueId.ToString(); }
+        }
+
+        #endregion
     }
 }

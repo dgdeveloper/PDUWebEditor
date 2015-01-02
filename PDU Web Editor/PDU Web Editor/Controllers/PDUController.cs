@@ -11,7 +11,7 @@ using System.Web.Mvc;
 using System.Xml.Linq;
 using System.IO;
 
-namespace PDU_Web_Editor.Controllers
+namespace PDU_Web_Editor.ControllersTestSet
 {
     public class PDUController : Controller
     {
@@ -28,7 +28,7 @@ namespace PDU_Web_Editor.Controllers
         public ActionResult Index()
         {
             ViewBag.Message = "Home Page - PDUs List";
-            return View();
+            return View("Index");
         }
         
         public ActionResult PDUs_Read([DataSourceRequest]DataSourceRequest request)

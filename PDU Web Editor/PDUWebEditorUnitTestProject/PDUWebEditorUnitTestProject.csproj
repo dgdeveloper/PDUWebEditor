@@ -37,7 +37,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Kendo.Mvc, Version=2014.1.415.440, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\VS Team Service Project\PDU Web Editor\PDU Web Editor\PDU Web Editor\bin\Kendo.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.2.1409.1722\lib\net40\Moq.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -52,6 +68,23 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Controllers\AssetController\AssetControllerActionAssets_ReadTests.cs" />
+    <Compile Include="Controllers\AssetController\AssetControllerActionIndexTests.cs" />
+    <Compile Include="Controllers\PDUController\PDUControllerActionPDU_DownloadTests.cs" />
+    <Compile Include="Controllers\PDUController\PDUControllerActionPDUs_CreateTests.cs" />
+    <Compile Include="Controllers\PDUController\PDUControllerActionPDUs_UpdateTests.cs" />
+    <Compile Include="Controllers\PDUController\PDUControllerActionPDURecords_UpdateTests.cs" />
+    <Compile Include="Controllers\PDUController\PDUControllerActionPDUs_DeleteTests.cs" />
+    <Compile Include="Controllers\PDUController\PDUControllerActionPDUs_ReadTests.cs" />
+    <Compile Include="Controllers\PDUController\PDUControllerActionIndexTests.cs" />
+    <Compile Include="Controllers\RecordController\RecordControllerActionRecords_CreatTests.cs" />
+    <Compile Include="Controllers\RecordController\RecordControllerActionRecords_DeleteTests.cs" />
+    <Compile Include="Controllers\RecordController\RecordControllerActionRecords_UpdateTests.cs" />
+    <Compile Include="Controllers\RecordController\RecordControllerActionIndexTests.cs" />
+    <Compile Include="Controllers\RecordController\RecordControllerActionRecord_ReadTests.cs" />
+    <Compile Include="DAL\Infrastructure\InMemoryRepositoryBase.cs" />
+    <Compile Include="DAL\Infrastructure\InMemoryUnitOfWork.cs" />
+    <Compile Include="Helper\TestDataFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -59,6 +92,10 @@
       <Project>{96FB32F0-D5B6-4AE9-BFE1-91DCEF058782}</Project>
       <Name>PDU Web Editor</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

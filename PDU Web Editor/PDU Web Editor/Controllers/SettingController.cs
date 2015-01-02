@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.Mvc;
 
 
-namespace PDU_Web_Editor.Controllers
+namespace PDU_Web_Editor.ControllersTestSet
 {
     public class SettingController : Controller
     {

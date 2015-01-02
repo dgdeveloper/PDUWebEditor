@@ -5,13 +5,14 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
+using PDU_Web_Editor.DAL.Interface;
 
 namespace PDU_Web_Editor.Models
 {
     /// <summary>
     /// a Entity type for tbl_Assets database table
     /// </summary>
-    public class Asset
+    public class Asset :IEntity
     {
 
         [Key]
@@ -21,6 +22,17 @@ namespace PDU_Web_Editor.Models
         public string Ast_FileLocation { get; set; }
         public string Ast_ScreenSize { get; set; }
         public virtual ICollection<Record> Records { get; set; }
-          
+
+
+
+
+        #region IEntity Members
+
+        public string Id
+        {
+            get { return this.Ast_FileName ; }
+        }
+
+        #endregion
     }
 }

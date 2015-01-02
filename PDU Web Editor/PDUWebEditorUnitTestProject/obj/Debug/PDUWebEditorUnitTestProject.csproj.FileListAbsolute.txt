@@ -19,10 +19,12 @@ C:\Workspace\BCLC QA project\VS Team Service Project\PDU Web Editor\PDU Web Edit
 C:\Workspace\BCLC QA project\VS Team Service Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\obj\Debug\PDUWebEditorUnitTestProject.pdb
 C:\Workspace\BCLC QA project\VS Team Service Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\bin\Debug\PDUWebEditorUnitTestProject.dll.CodeAnalysisLog.xml
 C:\Workspace\BCLC QA project\VS Team Service Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\bin\Debug\PDUWebEditorUnitTestProject.dll.lastcodeanalysissucceeded
+C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\bin\Debug\PDUWebEditorUnitTestProject.dll.config
 C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\bin\Debug\PDUWebEditorUnitTestProject.dll
 C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\bin\Debug\PDUWebEditorUnitTestProject.pdb
-C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\bin\Debug\PDU Web Editor.dll
 C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\bin\Debug\EntityFramework.dll
+C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\bin\Debug\EntityFramework.SqlServer.dll
+C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\bin\Debug\PDU Web Editor.dll
 C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\bin\Debug\System.Web.Optimization.dll
 C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\bin\Debug\System.Web.Http.dll
 C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\bin\Debug\Kendo.Mvc.dll
@@ -31,10 +33,13 @@ C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDUWeb
 C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\bin\Debug\Newtonsoft.Json.dll
 C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\bin\Debug\PDU Web Editor.pdb
 C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\bin\Debug\EntityFramework.xml
+C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\bin\Debug\EntityFramework.SqlServer.xml
 C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\bin\Debug\System.Web.Http.xml
 C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\bin\Debug\System.Web.Http.WebHost.xml
 C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\bin\Debug\System.Net.Http.Formatting.xml
 C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\bin\Debug\Newtonsoft.Json.xml
+C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\obj\Debug\PDUWebEditorUnitTestProject.csprojResolveAssemblyReference.cache
 C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\obj\Debug\PDUWebEditorUnitTestProject.dll
 C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\obj\Debug\PDUWebEditorUnitTestProject.pdb
-C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\obj\Debug\PDUWebEditorUnitTestProject.csprojResolveAssemblyReference.cache
+C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\bin\Debug\Moq.dll
+C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\PDUWebEditorUnitTestProject\bin\Debug\Moq.xml

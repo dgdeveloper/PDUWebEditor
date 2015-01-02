@@ -5,10 +5,11 @@ using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Web;
+using PDU_Web_Editor.DAL.Interface;
 
 namespace PDU_Web_Editor.DAL
 {
-    public class DbRepositoryBase<TEntity> : IRepository<TEntity>, IDisposable where TEntity : class
+    public class DbRepositoryBase<TEntity> : IRepository<TEntity>, IDisposable where TEntity : class, IEntity
     {
         internal DbContext context;
         internal DbSet<TEntity> dbSet;
@@ -57,7 +58,7 @@ namespace PDU_Web_Editor.DAL
             string includeProperties = "")
         {
             IQueryable<TEntity> query = dbSet;
-
+            
             if (filter != null)
             {
                 query = query.Where(filter);
