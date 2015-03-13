@@ -222,3 +222,4 @@ C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\bin\zh
 C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\bin\zh-Hant\System.Spatial.resources.dll
 C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\obj\Release\PDU Web Editor.dll
 C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\obj\Release\PDU Web Editor.pdb
+C:\Workspace\BCLC QA project\Github Project\PDU Web Editor\PDU Web Editor\obj\Release\PDU Web Editor.csprojResolveAssemblyReference.cache
