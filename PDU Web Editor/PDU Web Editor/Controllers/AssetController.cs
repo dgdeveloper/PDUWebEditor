@@ -63,9 +63,13 @@ namespace PDU_Web_Editor.ControllersTestSet
                 // Some browsers send file names with full path. We only care about the file name.
                 var fileName = Path.GetFileName(file.FileName);
 
+                PDUCustomConfigurationSection _pdyCustomConfig = (PDUCustomConfigurationSection)System.Configuration.ConfigurationManager.GetSection("PDUCustomConfigurationGroup/PDUCustomConfiguration");
+
                 //no duplicate file is allowed
-                String vSplitDestinationPath = Path.Combine(Server.MapPath("~/PDURunTime/pduv4500/webshow/pdu/Images/VSplitAds"), fileName);
-                String fullScreenDestinationPath =Path.Combine(Server.MapPath("~/PDURunTime/pduv4500/webshow/pdu/Animations/Ads"), fileName);
+                //String vSplitDestinationPath = Path.Combine(Server.MapPath("~/PDURunTime/pduv4500/webshow/pdu/Images/VSplitAds"), fileName);
+                //String fullScreenDestinationPath =Path.Combine(Server.MapPath("~/PDURunTime/pduv4500/webshow/pdu/Animations/Ads"), fileName);
+                String vSplitDestinationPath = Path.Combine(Server.MapPath(_pdyCustomConfig.PDUFolder.Path+"/Images/VSplitAds"), fileName);
+                String fullScreenDestinationPath = Path.Combine(Server.MapPath(_pdyCustomConfig.PDUFolder.Path+"/Animations/Ads"), fileName);
                 if (System.IO.File.Exists(vSplitDestinationPath) || System.IO.File.Exists(fullScreenDestinationPath))
                 {
                     return Content("the file with the same name exists already");
@@ -76,12 +80,12 @@ namespace PDU_Web_Editor.ControllersTestSet
                 string destinationRelativePath = string.Empty;
                 if (screenSize == "VSplit")
                 {
-                    destinationPath = Path.Combine(Server.MapPath("~/PDURunTime/pduv4500/webshow/pdu/Images/VSplitAds"), fileName);
+                    destinationPath = Path.Combine(Server.MapPath(_pdyCustomConfig.PDUFolder.Path+"/Images/VSplitAds"), fileName);
                     destinationRelativePath = "Images/VSplitAds/" + fileName;
                 }
                 else
                 {
-                    destinationPath = Path.Combine(Server.MapPath("~/PDURunTime/pduv4500/webshow/pdu/Animations/Ads"), fileName);
+                    destinationPath = Path.Combine(Server.MapPath(_pdyCustomConfig.PDUFolder.Path+"/Animations/Ads"), fileName);
                     destinationRelativePath = "Animations/Ads/" + fileName;
                 }
                
@@ -114,8 +118,9 @@ namespace PDU_Web_Editor.ControllersTestSet
 
         public ActionResult Assets_Delete([DataSourceRequest]DataSourceRequest request, Asset asset)
         {
-
-            var destinationPath = Path.Combine(Server.MapPath("~/PDURunTime/pduv4500/webshow/pdu/"), asset.Ast_FileLocation);
+            PDUCustomConfigurationSection _pdyCustomConfig = (PDUCustomConfigurationSection)System.Configuration.ConfigurationManager.GetSection("PDUCustomConfigurationGroup/PDUCustomConfiguration");
+            var destinationPath = Path.Combine(Server.MapPath(_pdyCustomConfig.PDUFolder.Path+"/"), asset.Ast_FileLocation);
+            
 
             if (!System.IO.File.Exists(destinationPath))
             {

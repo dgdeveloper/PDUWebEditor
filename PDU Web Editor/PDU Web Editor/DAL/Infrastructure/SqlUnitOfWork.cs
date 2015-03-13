@@ -74,6 +74,9 @@ namespace PDU_Web_Editor.DAL
             {
                 if (disposing)
                 {
+                    _pduRepository.Dispose();
+                    _assetRepository.Dispose();
+                    _RecordRepostiory.Dispose();
                     _context.Dispose();
                 }
             }

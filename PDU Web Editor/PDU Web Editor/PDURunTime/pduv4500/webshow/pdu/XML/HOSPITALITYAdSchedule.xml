@@ -1,19 +1,107 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schedule>
   <Product>
-    <ID>79</ID>
-    <Name>test1</Name>
-    <Location>Animations/Ads/GS_Budget_Full.swf</Location>
-    <StartDate>11717</StartDate>
-    <LastDate>11879</LastDate>
+    <ID>52</ID>
+    <Name>649 SuperDraw-June1-27.2014</Name>
+    <Location>Animations/Ads/SuperDraw_Full.swf</Location>
+    <StartDate>11687</StartDate>
+    <LastDate>11713</LastDate>
+    <Weight>5</Weight>
+  </Product>
+  <Product>
+    <ID>53</ID>
+    <Name>GameSense-Odds-June2-July7.2014</Name>
+    <Location>Animations/Ads/GS_Odds_Full.swf</Location>
+    <StartDate>11688</StartDate>
+    <LastDate>11723</LastDate>
     <Weight>1</Weight>
   </Product>
   <Product>
-    <ID>80</ID>
-    <Name>test2</Name>
+    <ID>54</ID>
+    <Name>GameSense-Lucky-July7-Aug11.2014</Name>
+    <Location>Animations/Ads/GS_Lucky_Full.swf</Location>
+    <StartDate>11723</StartDate>
+    <LastDate>11758</LastDate>
+    <Weight>1</Weight>
+  </Product>
+  <Product>
+    <ID>55</ID>
+    <Name>GameSense-Budget-Aug11-Sept8.2014</Name>
+    <Location>Animations/Ads/GS_Budget_Full.swf</Location>
+    <StartDate>11758</StartDate>
+    <LastDate>11786</LastDate>
+    <Weight>1</Weight>
+  </Product>
+  <Product>
+    <ID>56</ID>
+    <Name>LM Pkg$20-June2-July7.2014</Name>
+    <Location>Animations/Ads/LM_20Pkg_Full.swf</Location>
+    <StartDate>11688</StartDate>
+    <LastDate>11723</LastDate>
+    <Weight>3</Weight>
+  </Product>
+  <Product>
+    <ID>57</ID>
+    <Name>LM Pkg$40-July7-Aug11.2014</Name>
+    <Location>Animations/Ads/LM_40Pkg_Full.swf</Location>
+    <StartDate>11723</StartDate>
+    <LastDate>11758</LastDate>
+    <Weight>2</Weight>
+  </Product>
+  <Product>
+    <ID>58</ID>
+    <Name>LM Pkg$12-Aug11-Sept8.2014</Name>
+    <Location>Animations/Ads/LM_12Pkg_Full.swf</Location>
+    <StartDate>11758</StartDate>
+    <LastDate>11786</LastDate>
+    <Weight>2</Weight>
+  </Product>
+  <Product>
+    <ID>59</ID>
+    <Name>ProblemGambling June2-July6.2014</Name>
+    <Location>Animations/Ads/ProbGam_Full.swf</Location>
+    <StartDate>11688</StartDate>
+    <LastDate>11722</LastDate>
+    <Weight>1</Weight>
+  </Product>
+  <Product>
+    <ID>60</ID>
+    <Name>Sports Action-Mobile PDU</Name>
+    <Location>Animations/Ads/SA_mobile_Full.swf</Location>
+    <StartDate>11769</StartDate>
+    <LastDate>11770</LastDate>
+    <Weight>3</Weight>
+  </Product>
+  <Product>
+    <ID>61</ID>
+    <Name>Mobile PDU - Subscription</Name>
     <Location>Animations/Ads/Mobile_PDU_Full.swf</Location>
-    <StartDate>11717</StartDate>
-    <LastDate>11870</LastDate>
+    <StartDate>11769</StartDate>
+    <LastDate>11770</LastDate>
+    <Weight>3</Weight>
+  </Product>
+  <Product>
+    <ID>62</ID>
+    <Name>KenoBonus-May6-July29</Name>
+    <Location>Animations/Ads/KenoBonus_Full.swf</Location>
+    <StartDate>11661</StartDate>
+    <LastDate>11745</LastDate>
+    <Weight>5</Weight>
+  </Product>
+  <Product>
+    <ID>63</ID>
+    <Name>BC5050-Daily Draws</Name>
+    <Location>Animations/Ads/BC5050_DailyDraws_Full.swf</Location>
+    <StartDate>11769</StartDate>
+    <LastDate>11770</LastDate>
+    <Weight>2</Weight>
+  </Product>
+  <Product>
+    <ID>64</ID>
+    <Name>PHEP - BadBeat</Name>
+    <Location>Animations/Ads/PHEP_BadBeat_Full.swf</Location>
+    <StartDate>11769</StartDate>
+    <LastDate>11770</LastDate>
     <Weight>2</Weight>
   </Product>
 </Schedule>

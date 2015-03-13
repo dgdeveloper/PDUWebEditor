@@ -1,2 +1,115 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schedule />
+<Schedule>
+  <Product>
+    <ID>65</ID>
+    <Name>tBigLottoPromo-May5-June2.2014</Name>
+    <Location>Images/VSplitAds/BigLottoPromo_Half.swf</Location>
+    <StartDate>11662</StartDate>
+    <LastDate>11690</LastDate>
+    <Weight>5</Weight>
+  </Product>
+  <Product>
+    <ID>66</ID>
+    <Name>649 SuperDraw-June1-27.2014</Name>
+    <Location>Images/VSplitAds/SuperDraw_Half.swf</Location>
+    <StartDate>11687</StartDate>
+    <LastDate>11713</LastDate>
+    <Weight>5</Weight>
+  </Product>
+  <Product>
+    <ID>67</ID>
+    <Name>GameSense-Odds-June2-July7.2014</Name>
+    <Location>Images/VSplitAds/GS_Odds_Half.swf</Location>
+    <StartDate>11688</StartDate>
+    <LastDate>11723</LastDate>
+    <Weight>1</Weight>
+  </Product>
+  <Product>
+    <ID>68</ID>
+    <Name>ameSense-Lucky-July7-Aug11.2014</Name>
+    <Location>Images/VSplitAds/GS_Lucky_Half.swf</Location>
+    <StartDate>11723</StartDate>
+    <LastDate>11758</LastDate>
+    <Weight>1</Weight>
+  </Product>
+  <Product>
+    <ID>69</ID>
+    <Name>GameSense-Budget-Aug11-Sept8.2014</Name>
+    <Location>Images/VSplitAds/GS_Budget_Half.swf</Location>
+    <StartDate>11758</StartDate>
+    <LastDate>11786</LastDate>
+    <Weight>1</Weight>
+  </Product>
+  <Product>
+    <ID>70</ID>
+    <Name>Lotto Max-20Pkg-June2-July7.2014</Name>
+    <Location>Images/VSplitAds/LM_20Pkg_Half.swf</Location>
+    <StartDate>11688</StartDate>
+    <LastDate>11723</LastDate>
+    <Weight>2</Weight>
+  </Product>
+  <Product>
+    <ID>71</ID>
+    <Name>Lotto Max-40Pkg-July7-Aug11.2014</Name>
+    <Location>Images/VSplitAds/LM_40Pkg_Half.swf</Location>
+    <StartDate>11723</StartDate>
+    <LastDate>11758</LastDate>
+    <Weight>2</Weight>
+  </Product>
+  <Product>
+    <ID>72</ID>
+    <Name>Lotto Max-12Pkg-Aug11-Sept8.2014</Name>
+    <Location>Images/VSplitAds/LM_12Pkg_Half.swf</Location>
+    <StartDate>11758</StartDate>
+    <LastDate>11786</LastDate>
+    <Weight>2</Weight>
+  </Product>
+  <Product>
+    <ID>73</ID>
+    <Name>Problem Gambling-Jun2-July6</Name>
+    <Location>Images/VSplitAds/ProbGam_Half.swf</Location>
+    <StartDate>11688</StartDate>
+    <LastDate>11722</LastDate>
+    <Weight>1</Weight>
+  </Product>
+  <Product>
+    <ID>74</ID>
+    <Name>Sports Action - Mobile PDU</Name>
+    <Location>Images/VSplitAds/SA_mobile_Half.swf</Location>
+    <StartDate>11772</StartDate>
+    <LastDate>11772</LastDate>
+    <Weight>3</Weight>
+  </Product>
+  <Product>
+    <ID>75</ID>
+    <Name>Keno Bonus-May6-July29</Name>
+    <Location>Images/VSplitAds/KenoBonus_Half.swf</Location>
+    <StartDate>11661</StartDate>
+    <LastDate>11745</LastDate>
+    <Weight>5</Weight>
+  </Product>
+  <Product>
+    <ID>76</ID>
+    <Name>Mobile PDU - Subscriptions</Name>
+    <Location>Images/VSplitAds/Mobile_PDU_Half.swf</Location>
+    <StartDate>11772</StartDate>
+    <LastDate>11772</LastDate>
+    <Weight>3</Weight>
+  </Product>
+  <Product>
+    <ID>77</ID>
+    <Name>BC5050-Daily Draws</Name>
+    <Location>Images/VSplitAds/BC5050_DailyDraws_Half.swf</Location>
+    <StartDate>11772</StartDate>
+    <LastDate>11772</LastDate>
+    <Weight>2</Weight>
+  </Product>
+  <Product>
+    <ID>78</ID>
+    <Name>PHEP-BadBeat</Name>
+    <Location>Images/VSplitAds/PHEP_BadBeat_Half.swf</Location>
+    <StartDate>11772</StartDate>
+    <LastDate>11772</LastDate>
+    <Weight>2</Weight>
+  </Product>
+</Schedule>

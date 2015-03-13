@@ -183,7 +183,9 @@ namespace PDU_Web_Editor.ControllersTestSet
             string pduType;
             string pduScreenSize;
 
-            ExtraDataConfigurationManager _extradDataConfigManager = ExtraDataConfigurationManager.ExtraDataConfiguration;           
+            ExtraDataConfigurationManager _extradDataConfigManager = ExtraDataConfigurationManager.ExtraDataConfiguration;
+            PDUCustomConfigurationSection _pdyCustomConfig = (PDUCustomConfigurationSection) System.Configuration.ConfigurationManager.GetSection("PDUCustomConfigurationGroup/PDUCustomConfiguration");
+
 
             using (var pduRepository = _unitOfWork.PDURepository)
             {
@@ -220,7 +222,8 @@ namespace PDU_Web_Editor.ControllersTestSet
                 //return to View to show full screen preview or VSplit screeN
                 pduScreenSize  = pdu.Pdu_ScreenSize == "FullScreen" ? "FullScreen" : "VSplit";
                 ViewBag.pduScreenSize = pduScreenSize;
-                string basePath = Server.MapPath("~/tmp/");
+                string basePath = Server.MapPath(_pdyCustomConfig.TempFolder.Path + "/");
+                
                 //create a transaction.xml depending on the screen size
                 if (pduScreenSize == "FullScreen")
                 {
@@ -240,7 +243,7 @@ namespace PDU_Web_Editor.ControllersTestSet
                 }
 
                 XDocument pduXMLFile = ouputPDUinXML(pdu);
-                destinationPath = Path.Combine(Server.MapPath("~/PDURunTime/pduv4500/webshow/pdu/XML"), xmlFileName);
+                destinationPath = Path.Combine(Server.MapPath(_pdyCustomConfig.PDUFolder.Path + "/XML"), xmlFileName);
                 pduXMLFile.Save(destinationPath);
             }
 
@@ -305,7 +308,9 @@ namespace PDU_Web_Editor.ControllersTestSet
         {
             string sourceFileName = "transaction.xml";
             string destinationFileName = "transaction.xml.old";
-            string basePath = Server.MapPath("~/tmp/");
+
+            PDUCustomConfigurationSection _pdyCustomConfig = (PDUCustomConfigurationSection)System.Configuration.ConfigurationManager.GetSection("PDUCustomConfigurationGroup/PDUCustomConfiguration");
+            string basePath = Server.MapPath(_pdyCustomConfig.TempFolder.Path + "/");
 
             if (System.IO.File.Exists(Path.Combine(basePath, "transaction.xml")))
             {

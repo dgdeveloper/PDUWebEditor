@@ -11,7 +11,7 @@ namespace PDU_Web_Editor.ControllersTestSet
 {
     public class SettingController : Controller
     {
-        private ExtraDataConfigurationManager _extradDataConfigManager = ExtraDataConfigurationManager.ExtraDataConfiguration;
+         private ExtraDataConfigurationManager _extradDataConfigManager = ExtraDataConfigurationManager.ExtraDataConfiguration;
         [HttpGet]
         public ActionResult index()
         {
