@@ -55,6 +55,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -155,9 +156,11 @@
     <Compile Include="Common\FutureDateOnlyAttribute.cs" />
     <Compile Include="Common\GreaterDateAttribute.cs" />
     <Compile Include="Controllers\AssetController.cs" />
+    <Compile Include="Controllers\PackageController.cs" />
     <Compile Include="Controllers\PDUController.cs" />
     <Compile Include="Controllers\RecordController.cs" />
     <Compile Include="Controllers\SettingController.cs" />
+    <Compile Include="Models\Package.cs" />
     <Compile Include="Models\PDUCustomConfigurationSection.cs" />
     <Compile Include="DAL\Interface\IEntity.cs" />
     <Compile Include="DAL\Interface\IRepository.cs" />
@@ -1197,6 +1200,8 @@
     <Content Include="Views\PDU\PDU_Preview.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Date.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\DateTime.cshtml" />
+    <Content Include="Views\Package\Index.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\_AdFileEditor.cshtml" />
     <None Include="Views\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1206,6 +1211,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="PackageDownload\" />
     <Folder Include="PDURunTime\pduv4500\webshow\chrome\" />
   </ItemGroup>
   <PropertyGroup>

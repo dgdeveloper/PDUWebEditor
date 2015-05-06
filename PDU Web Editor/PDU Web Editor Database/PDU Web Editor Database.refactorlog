@@ -308,4 +308,172 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Ast_ScreenSize" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="a80036ed-b300-49d9-a872-68ed4f663e37" ChangeDateTime="04/09/2015 20:27:02">
+    <Property Name="ElementName" Value="[dbo].[tbl_Packages].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Packages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="P" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4e9e51c4-2ee5-4f51-923d-ef7da2d815a0" ChangeDateTime="04/09/2015 20:27:24">
+    <Property Name="ElementName" Value="[dbo].[tbl_Packages].[P]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Packages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pkg_Name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7d5e85c1-ee7c-4bcd-af9a-22fd5c9a6e8b" ChangeDateTime="04/09/2015 20:28:17">
+    <Property Name="ElementName" Value="[dbo].[tbl_Packages].[Pkg_UpdateByWho]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Packages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pkg_UpdateByWho1" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6884d031-b6fe-4823-89e0-c3024595e7aa" ChangeDateTime="04/09/2015 20:28:19">
+    <Property Name="ElementName" Value="[dbo].[tbl_Packages].[sds]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Packages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pkg_UpdateByWho" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="21c8efa4-c138-4b88-a625-ca6427dbdb74" ChangeDateTime="04/09/2015 20:28:24">
+    <Property Name="ElementName" Value="[dbo].[tbl_Packages].[Pkg_UpdateByWho]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Packages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="aa" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="087df4c0-1d03-46f2-a586-716a55bc8b59" ChangeDateTime="04/09/2015 20:28:27">
+    <Property Name="ElementName" Value="[dbo].[tbl_Packages].[sds]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Packages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pkg_UpdateByWho" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="629f19a4-6f09-4364-ad3b-27e7f9c173a4" ChangeDateTime="04/09/2015 20:31:51">
+    <Property Name="ElementName" Value="[dbo].[tbl_Packages].[Pkg_HospitalityFul]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Packages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pkg_HospitalityFullScreen" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8bdfdc6e-fade-41ec-bc3a-54e82483f19d" ChangeDateTime="04/09/2015 20:32:12">
+    <Property Name="ElementName" Value="[dbo].[tbl_Packages].[Pkg_HospitalityFullScreen]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Packages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pkg_HospitalityFullScreenPDU" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="88db4e87-562e-4e4a-91b8-607e49ac79f1" ChangeDateTime="04/09/2015 20:33:13">
+    <Property Name="ElementName" Value="[dbo].[tbl_Packages].[Pkg_HospitalityVSplitPDU1]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Packages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pkg_HospitalityFullScreenPDU" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="be708b48-7c86-4cb7-8d7c-a630f554f8de" ChangeDateTime="04/09/2015 20:33:19">
+    <Property Name="ElementName" Value="[dbo].[tbl_Packages].[Pkg_HospitalityFullScreenPDU]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Packages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pkg_HospitalityFullScreenPDUid" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f0f4e235-f3fd-489e-ad9b-4293b840ae25" ChangeDateTime="04/09/2015 20:33:22">
+    <Property Name="ElementName" Value="[dbo].[tbl_Packages].[Pkg_HospitalityVSplitPDU]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Packages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pkg_HospitalityVSplitPDUid" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="aca23d56-29b5-48e2-ba80-9c4186a3a9d6" ChangeDateTime="04/09/2015 20:33:33">
+    <Property Name="ElementName" Value="[dbo].[tbl_Packages].[Pkg_HospitalityFullScreenPDU]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Packages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pkg_RetailFullScreenPDUid" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="40c33714-ad69-4074-b08b-5cb2b3c741a0" ChangeDateTime="04/09/2015 20:33:45">
+    <Property Name="ElementName" Value="[dbo].[tbl_Packages].[Pkg_RetailFullScreenPDUid1]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Packages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pkg_RetailVSplitPDUid" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fd358940-848d-496e-86b7-bf4f952d90c9" ChangeDateTime="04/09/2015 21:07:01">
+    <Property Name="ElementName" Value="[dbo].[tbl_PDUs].[Pdu_]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_PDUs]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pdu_PackageName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fd5f5f34-1d99-4f7e-8980-43c78188755a" ChangeDateTime="04/10/2015 17:25:44">
+    <Property Name="ElementName" Value="[dbo].[tbl_Packages].[Pdu_UpdateByWho]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Packages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pkg_UpdateByWho" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a90e6638-0f57-4a29-9b03-d4d35715ec12" ChangeDateTime="04/10/2015 17:25:48">
+    <Property Name="ElementName" Value="[dbo].[tbl_Packages].[Pdu_UpdateOnDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Packages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pkg_UpdateOnDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d7fcf5a0-2aa9-4532-ad7a-4e03e7520d5d" ChangeDateTime="04/16/2015 22:30:41">
+    <Property Name="ElementName" Value="[dbo].[tbl_Packages].[PKg_]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Packages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PKg_Pkg_HospitalityFullAdAsset" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="873563c1-3152-4938-b9d7-5f2781073904" ChangeDateTime="04/16/2015 22:59:15">
+    <Property Name="ElementName" Value="[dbo].[tbl_Packages].[PKg_Pkg_HospitalityFullAdAsset]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Packages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PKg_HospitalityFullAdAsset" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3ad9577f-a330-48aa-b745-993bbf9f0749" ChangeDateTime="04/16/2015 23:11:04">
+    <Property Name="ElementName" Value="[dbo].[tbl_Packages].[PKg_HospitalityFullAdAsset]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Packages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PKg_HospitalityFullAd" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="34f41bbb-2689-4d9f-a878-032eeb744898" ChangeDateTime="04/16/2015 23:11:06">
+    <Property Name="ElementName" Value="[dbo].[tbl_Packages].[Pkg_HospitalityVSplitAdAsset]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Packages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pkg_HospitalityVSplitAd" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9c1a7794-c745-4ed3-beb5-e2b28f6a8985" ChangeDateTime="04/16/2015 23:11:09">
+    <Property Name="ElementName" Value="[dbo].[tbl_Packages].[Pkg_RetailFullAdAsset]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Packages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pkg_RetailFullAd" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c0748233-ba46-4dfd-931c-1f960bdd9369" ChangeDateTime="04/16/2015 23:11:12">
+    <Property Name="ElementName" Value="[dbo].[tbl_Packages].[Pkg_RetailVSplitAdAsset]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Packages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pkg_RetailVSplitAd" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ef82d87d-d3b3-421b-8482-d87f13d59ee9" ChangeDateTime="04/17/2015 23:14:37">
+    <Property Name="ElementName" Value="[dbo].[tbl_Packages].[Pkg_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Packages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pkg_PkgUniqueId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e093d454-51fe-4f73-8818-934163f4fa94" ChangeDateTime="04/20/2015 17:55:45">
+    <Property Name="ElementName" Value="[dbo].[tbl_Packages].[url]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tbl_Packages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Pkg_Uri" />
+  </Operation>
 </Operations>

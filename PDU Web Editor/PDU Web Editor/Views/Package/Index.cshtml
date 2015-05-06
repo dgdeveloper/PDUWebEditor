@@ -1,0 +1,87 @@
+﻿@{
+    ViewBag.Title = "Home Page - package Package";
+}
+@using PDU_Web_Editor.Models
+
+@section scripts
+{
+    <script type="text/javascript">
+
+        function onDataBound(e) {
+            //Update button will be shown for new records only
+            this.table.find(".k-grid-edit").hide();
+
+        }
+        function onEdit(e) {
+            //record edit,down,preview button will not be shown for the new record
+            $("a.record-edit:first").hide();
+            $("a.record-download:first").hide();
+
+        }
+    </script>
+}
+<div class="content-wrapper">
+    <div class="k-block" >
+        <div class="k-header k-info-colored">
+            <span class="setting-title">Package Releases</span>
+            <img class="setting-icon" src="@Url.Content("~/Images/settings-3.png")" alt="setting icon" />
+        </div>
+        <div class="k-widget">
+            @(Html.Kendo().Grid<Package>() //Bind the grid to 
+                          .Name("grid")
+                          .Columns(columns =>
+                          {
+                              // Create a column bound to the package FileName property
+                              columns.Bound(package => package.Pkg_Name).Title("Name");
+                              // Create a column bound to the package UpdatedByWho property
+                              columns.Bound(package => package.Pkg_UpdateByWho).Title("Created By");
+                              // Create a column bound to the package UpdatedOnDate property
+                              columns.Bound(package => package.Pkg_UpdateOnDate).Format("{0:M/d/yyyy HH:mm:ss}").Title("Created On");
+                              // Create a column bound to the Hospitality Full Ad File property
+                              columns.Bound(package => package.Pkg_HospitalityFullAd).EditorTemplateName("_AdFileEditor").EditorViewData(new { pduType = "Hospitality", screenSize = "FullScreen" }).Title("H Full Ad");
+                              // Create a column bound to the Hospitality vSplit Ad File property
+                              columns.Bound(package => package.Pkg_HospitalityVSplitAd).EditorTemplateName("_AdFileEditor").EditorViewData(new { pduType = "Hospitality", screenSize = "VSplit" }).Title("H vSplit Ad");
+                              // Create a column bound to the Retail Full Ad Asset File property
+                              columns.Bound(package => package.Pkg_RetailFullAd).EditorTemplateName("_AdFileEditor").EditorViewData(new { pduType = "Retail", screenSize = "FullScreen" }).Title("R Full Ad");
+                              // Create a column bound to the Retail vSplit Ad  File property
+                              columns.Bound(package => package.Pkg_RetailVSplitAd).EditorTemplateName("_AdFileEditor").EditorViewData(new { pduType = "Retail", screenSize = "VSplit" }).Title("R vSplit Ad");
+                              //create a column for the download button
+                              columns.Template(e => { }).
+                                                      ClientTemplate("<a  class=\"k-button k-button-icontext record-download\" href=\" " +
+                                                                          @Url.Action("Package_Download", "Package") + "/#= Pkg_Uri#   " + "\">"
+                                                                          + "<span class=\"k-icon k-i-seek-s\"></span>Download</a> ")
+                                                      .Title("Download");
+                              columns.Command(commands =>
+                              {
+                                  commands.Edit();
+                                  commands.Destroy(); // The "destroy" command removes data items
+                              }).Title("Commands");
+                          })
+                          .ToolBar(toolbar => { toolbar.Create().Text("Add a new package release"); 
+                                              }
+                                   ) // The "create" command adds new data items
+                          .Editable(editable => editable.Mode(GridEditMode.InLine)) // Use inline editing mode
+                          .Pageable() // Enable paging
+                          .Sortable() // Enable sorting
+                          .DataSource(dataSource => dataSource
+                                      .Ajax()
+                                      .Model(model =>
+                                       {
+                                           model.Id(package => package.Pkg_Name); // Specify the property which is the unique identifier of the model
+                                           model.Field(package => package.Pkg_UpdateByWho).Editable(false); // Make the package updateByWho property not editable
+                                           model.Field(package => package.Pkg_UpdateOnDate).Editable(false); // Make the package updateOnDate property not editable
+                                           
+                                       })
+                                      .Read(read => read.Action("Packages_Read", "package"))
+                                      .Create(create => create.Action("Packages_Create", "package"))
+                                      .Update(update => update.Action("Packages_Update", "package"))
+                                      .Destroy(destroy => destroy.Action("Packages_Delete", "package")) 
+                           )
+                           .Events(events => events.Edit("onEdit")
+                                                   .DataBound("onDataBound")
+                                  )
+             )
+        </div>     
+    </div>
+</div>
+

@@ -14,10 +14,18 @@ namespace PDU_Web_Editor
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "packageDownload",
+                url: "Package/Package_Download/{Pkg_Uri}",
+                defaults: new { controller = "Package", action = "Package_Download" }
+           );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "PDU", action = "Index", id = UrlParameter.Optional }
             );
+
+
         }
     }
 }

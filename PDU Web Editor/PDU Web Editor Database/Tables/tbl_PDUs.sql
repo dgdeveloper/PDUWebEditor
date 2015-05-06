@@ -6,5 +6,5 @@
     [Pdu_UpdateOnDate] DATETIME2 NOT NULL, 
     [Pdu_Type] NVARCHAR(25) NOT NULL, 
     [Pdu_ScreenSize] NVARCHAR(50) NOT NULL, 
-    CONSTRAINT [pk_Pdu_PDUUniqueId] PRIMARY KEY ([Pdu_PDUUniqueId]), 
+    CONSTRAINT [pk_Pdu_PDUUniqueId] PRIMARY KEY ([Pdu_PDUUniqueId])
 )

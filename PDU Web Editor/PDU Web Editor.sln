@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDU Web Editor", "PDU Web Editor\PDU Web Editor.csproj", "{96FB32F0-D5B6-4AE9-BFE1-91DCEF058782}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDUWebEditorUnitTestProject", "PDUWebEditorUnitTestProject\PDUWebEditorUnitTestProject.csproj", "{29A57B72-73AE-4090-BE50-AF007F915374}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PDU Web Editor Database", "PDU Web Editor Database\PDU Web Editor Database.sqlproj", "{42F82E32-6AC5-417F-9BF0-98993506262F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDU Web Editor", "PDU Web Editor\PDU Web Editor.csproj", "{96FB32F0-D5B6-4AE9-BFE1-91DCEF058782}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,14 +15,6 @@ Global
 		test2|Any CPU = test2|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{96FB32F0-D5B6-4AE9-BFE1-91DCEF058782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{96FB32F0-D5B6-4AE9-BFE1-91DCEF058782}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{96FB32F0-D5B6-4AE9-BFE1-91DCEF058782}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{96FB32F0-D5B6-4AE9-BFE1-91DCEF058782}.Release|Any CPU.Build.0 = Release|Any CPU
-		{96FB32F0-D5B6-4AE9-BFE1-91DCEF058782}.test|Any CPU.ActiveCfg = Release|Any CPU
-		{96FB32F0-D5B6-4AE9-BFE1-91DCEF058782}.test|Any CPU.Build.0 = Release|Any CPU
-		{96FB32F0-D5B6-4AE9-BFE1-91DCEF058782}.test2|Any CPU.ActiveCfg = Debug|Any CPU
-		{96FB32F0-D5B6-4AE9-BFE1-91DCEF058782}.test2|Any CPU.Build.0 = Debug|Any CPU
 		{29A57B72-73AE-4090-BE50-AF007F915374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{29A57B72-73AE-4090-BE50-AF007F915374}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29A57B72-73AE-4090-BE50-AF007F915374}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -43,6 +35,14 @@ Global
 		{42F82E32-6AC5-417F-9BF0-98993506262F}.test2|Any CPU.ActiveCfg = Debug|Any CPU
 		{42F82E32-6AC5-417F-9BF0-98993506262F}.test2|Any CPU.Build.0 = Debug|Any CPU
 		{42F82E32-6AC5-417F-9BF0-98993506262F}.test2|Any CPU.Deploy.0 = Debug|Any CPU
+		{96FB32F0-D5B6-4AE9-BFE1-91DCEF058782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96FB32F0-D5B6-4AE9-BFE1-91DCEF058782}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96FB32F0-D5B6-4AE9-BFE1-91DCEF058782}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96FB32F0-D5B6-4AE9-BFE1-91DCEF058782}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96FB32F0-D5B6-4AE9-BFE1-91DCEF058782}.test|Any CPU.ActiveCfg = Release|Any CPU
+		{96FB32F0-D5B6-4AE9-BFE1-91DCEF058782}.test|Any CPU.Build.0 = Release|Any CPU
+		{96FB32F0-D5B6-4AE9-BFE1-91DCEF058782}.test2|Any CPU.ActiveCfg = Release|Any CPU
+		{96FB32F0-D5B6-4AE9-BFE1-91DCEF058782}.test2|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

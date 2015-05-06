@@ -12,6 +12,7 @@ namespace PDU_Web_Editor.DAL
         IRepository<Asset> AssetRepository { get; }
         IRepository<Record> RecordRepostiory { get; }
         IRepository<PDU> PDURepository { get; }
+        IRepository<Package> PackageRepository { get; }
         void Save();
     }
 }

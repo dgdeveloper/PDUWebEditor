@@ -219,7 +219,7 @@ namespace PDU_Web_Editor.ControllersTestSet
                 _extradDataConfigManager.RetailerType = pduType;
                 _extradDataConfigManager.Save();
 
-                //return to View to show full screen preview or VSplit screeN
+                //return to View to show full screen preview or VSplit screen
                 pduScreenSize  = pdu.Pdu_ScreenSize == "FullScreen" ? "FullScreen" : "VSplit";
                 ViewBag.pduScreenSize = pduScreenSize;
                 string basePath = Server.MapPath(_pdyCustomConfig.TempFolder.Path + "/");

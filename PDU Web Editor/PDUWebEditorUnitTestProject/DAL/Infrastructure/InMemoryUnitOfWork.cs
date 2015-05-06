@@ -13,6 +13,7 @@ namespace PDUWebEditorUnitTestProject.DAL.Infrastructure
         private InMemoryRepositoryBase<Asset> _assetRepository;
         private InMemoryRepositoryBase<PDU> _pduRepository;
         private InMemoryRepositoryBase<Record> _RecordRepostiory;
+        private InMemoryRepositoryBase<Package> _PackageRepostiory;
         private bool disposed = false;
 
         public InMemoryUnitOfWork()
@@ -20,6 +21,7 @@ namespace PDUWebEditorUnitTestProject.DAL.Infrastructure
             this._assetRepository = new InMemoryRepositoryBase<Asset>();
             this._pduRepository = new InMemoryRepositoryBase<PDU>();
             this._RecordRepostiory = new InMemoryRepositoryBase<Record>();
+            this._PackageRepostiory = new InMemoryRepositoryBase<Package>();
         }
 
         #region IUnitOfWork Members
@@ -39,6 +41,10 @@ namespace PDUWebEditorUnitTestProject.DAL.Infrastructure
             get { return _pduRepository; }
         }
 
+        public IRepository<Package> PackageRepository
+        {
+            get { return _PackageRepostiory; }
+        }
         public void Save()
         {
             //nothing 

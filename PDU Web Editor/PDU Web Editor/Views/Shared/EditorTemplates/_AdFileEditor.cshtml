@@ -1,0 +1,14 @@
+﻿<!--asset drop down list editor template on Package List page  -->
+@model PDU_Web_Editor.Models.PDU
+@{
+    ViewBag.Title = "_AdFileEditor";
+}
+
+
+@(Html.Kendo().DropDownListFor(m => m)
+    .OptionLabel("Select a PDU Ad")
+    .DataValueField("Pdu_FileName") // The value of the dropdown is taken from the Ast_FileName property
+    .DataTextField("Pdu_FileName") // The text of the items is taken from the Ast_FileName property
+    .DataSource(datasource => datasource.Read(read => read.Action("getPDUAdByPDUTypeAndScreenSize","Package",new {pduType = ViewData["pduType"], screenSize =ViewData["screenSize"]})))
+    .HtmlAttributes(new { style="width:auto" }) @*if auto not given, the control takes up the whole space*@
+)

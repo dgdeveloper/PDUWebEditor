@@ -87,7 +87,7 @@ namespace PDU_Web_Editor.DAL
             {
                 if (disposing)
                 {
-                    context.Dispose();
+                    //context.Dispose();
                 }
             }
             this.disposed = true;

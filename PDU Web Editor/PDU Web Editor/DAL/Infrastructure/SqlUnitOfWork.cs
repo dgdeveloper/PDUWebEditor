@@ -13,6 +13,7 @@ namespace PDU_Web_Editor.DAL
         private IRepository<Asset> _assetRepository;
         private IRepository<PDU> _pduRepository;
         private IRepository<Record> _RecordRepostiory;
+        private IRepository<Package> _PackageRepostiory;
         private bool disposed = false;
 
         public SqlUnitOfWork(DbContext context)
@@ -58,6 +59,19 @@ namespace PDU_Web_Editor.DAL
                 return _pduRepository;
             }
             
+        }
+
+        public IRepository<Package> PackageRepository
+        {
+            get
+            {
+                if (this._PackageRepostiory == null)
+                {
+                    this._PackageRepostiory = new DbRepositoryBase<Package>(_context);
+                }
+                return _PackageRepostiory;
+            }
+
         }
 
         public void Save()

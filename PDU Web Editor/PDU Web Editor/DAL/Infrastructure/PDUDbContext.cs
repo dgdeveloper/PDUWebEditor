@@ -19,6 +19,7 @@ namespace PDU_Web_Editor.DAL
         public DbSet<Asset> Assets { get; set; }
         public DbSet<Record> Records { get; set; }
         public DbSet<PDU> PDUs { get; set; }
+        public DbSet<Package> Packages { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -27,7 +28,7 @@ namespace PDU_Web_Editor.DAL
             modelBuilder.Entity<Asset>().ToTable("tbl_Assets");
             modelBuilder.Entity<PDU>().ToTable("tbl_PDUs");
             modelBuilder.Entity<Record>().ToTable("tbl_Records");
-
+            modelBuilder.Entity<Package>().ToTable("tbl_Packages");
             //modelBuilder.Entity<PDU>()
             //    .HasMany(c => c.Records).WithMany(i => i.PDUs)
             //    .Map(t => t.MapLeftKey("Pdr_PDUUniqueId")

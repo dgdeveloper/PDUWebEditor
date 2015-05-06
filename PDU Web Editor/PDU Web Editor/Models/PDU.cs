@@ -17,17 +17,22 @@ namespace PDU_Web_Editor.Models
     {
         [Key]
         public int Pdu_PDUUniqueId { get; set; }
+
         [Required]
         [DisplayName("PDU FileName")]
         [StringLength(255)]
         public string Pdu_FileName { get; set; }
+
         public string Pdu_UpdateByWho { get; set; }
+
         public System.DateTime Pdu_UpdateOnDate { get; set; }
+
         [Required]
         [DisplayName("PDU Type")]
         [StringLength(255)]
         [UIHint("_PDUTypeEditor")]
         public string Pdu_Type { get; set; }
+
         [Required]
         [DisplayName("PDU ScreenSize")]
         [UIHint("_ScreenSizeEditor")]
